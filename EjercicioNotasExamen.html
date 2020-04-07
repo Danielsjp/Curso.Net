@@ -1,0 +1,48 @@
+// Javascript
+<div>
+
+
+</div>
+
+<script>
+
+console.log("Bienvenid@ al programa para gestión de alumnos");
+console.log("Introduzca las notas de los alumnos");
+
+// 1 meter 10 notas en vez 5
+var notasDeAlumnos = new Array();
+
+notasDeAlumnos.push(4.6);
+notasDeAlumnos.push(2.3);
+notasDeAlumnos.push(6);
+notasDeAlumnos.push(3.9);
+notasDeAlumnos.push(5);
+notasDeAlumnos.push(4.6);
+notasDeAlumnos.push(3);
+notasDeAlumnos.push(6);
+notasDeAlumnos.push(9);
+notasDeAlumnos.push(8);
+var largo1 = notasDeAlumnos.length;
+console.log(largo1);
+var suma1 = notasDeAlumnos[0] +
+            notasDeAlumnos[1] +
+            notasDeAlumnos[2] +
+            notasDeAlumnos[3] +
+            notasDeAlumnos[4] +
+            notasDeAlumnos[5] +
+            notasDeAlumnos[6] +
+            notasDeAlumnos[7] +
+            notasDeAlumnos[8] +
+            notasDeAlumnos[9];
+
+console.log(suma1);
+//Muestra Media           
+var media = suma1/largo1;
+console.log(media);
+var maximo1 = Math.max(...notasDeAlumnos);
+//Muestra Num Maximo
+console.log(maximo1);
+//Muestra Num Minimo
+var minimo1 = Math.min(...notasDeAlumnos);
+console.log(minimo1);
+</script>
