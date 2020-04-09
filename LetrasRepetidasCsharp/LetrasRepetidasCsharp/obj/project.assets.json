@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sjpda\\source\\repos\\Danielsjp\\Curso.Net\\Holaquetal\\Holaquetal.csproj",
-      "projectName": "Holaquetal",
-      "projectPath": "C:\\Users\\sjpda\\source\\repos\\Danielsjp\\Curso.Net\\Holaquetal\\Holaquetal.csproj",
+      "projectUniqueName": "C:\\Users\\sjpda\\Documents\\GitHub\\Curso.Net\\LetrasRepetidasCsharp\\LetrasRepetidasCsharp\\LetrasRepetidasCsharp.csproj",
+      "projectName": "LetrasRepetidasCsharp",
+      "projectPath": "C:\\Users\\sjpda\\Documents\\GitHub\\Curso.Net\\LetrasRepetidasCsharp\\LetrasRepetidasCsharp\\LetrasRepetidasCsharp.csproj",
       "packagesPath": "C:\\Users\\sjpda\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sjpda\\source\\repos\\Danielsjp\\Curso.Net\\Holaquetal\\obj\\",
+      "outputPath": "C:\\Users\\sjpda\\Documents\\GitHub\\Curso.Net\\LetrasRepetidasCsharp\\LetrasRepetidasCsharp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

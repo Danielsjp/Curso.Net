@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29926.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Letras", "Letras.csproj", "{7675E7C6-89D6-4259-B5D4-51DA4C895EF7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LetrasRepetidasCsharp", "LetrasRepetidasCsharp.csproj", "{79D7F0B4-13B5-40F4-AE30-9FFE3ADE9EBD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7675E7C6-89D6-4259-B5D4-51DA4C895EF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7675E7C6-89D6-4259-B5D4-51DA4C895EF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7675E7C6-89D6-4259-B5D4-51DA4C895EF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7675E7C6-89D6-4259-B5D4-51DA4C895EF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79D7F0B4-13B5-40F4-AE30-9FFE3ADE9EBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79D7F0B4-13B5-40F4-AE30-9FFE3ADE9EBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79D7F0B4-13B5-40F4-AE30-9FFE3ADE9EBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79D7F0B4-13B5-40F4-AE30-9FFE3ADE9EBD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {DDDC4DD4-40B2-4C18-9795-1DEC2B8FDF8F}
+		SolutionGuid = {F3EAB645-20D3-46E9-BDC7-667F3F180256}
 	EndGlobalSection
 EndGlobal

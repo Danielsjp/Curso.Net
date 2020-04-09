@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sjpda\\source\\repos\\Danielsjp\\Curso.Net\\Letras\\Letras.csproj": {}
+    "C:\\Users\\sjpda\\Documents\\GitHub\\Curso.Net\\LetrasRepetidasCsharp\\LetrasRepetidasCsharp\\LetrasRepetidasCsharp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sjpda\\source\\repos\\Danielsjp\\Curso.Net\\Letras\\Letras.csproj": {
+    "C:\\Users\\sjpda\\Documents\\GitHub\\Curso.Net\\LetrasRepetidasCsharp\\LetrasRepetidasCsharp\\LetrasRepetidasCsharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sjpda\\source\\repos\\Danielsjp\\Curso.Net\\Letras\\Letras.csproj",
-        "projectName": "Letras",
-        "projectPath": "C:\\Users\\sjpda\\source\\repos\\Danielsjp\\Curso.Net\\Letras\\Letras.csproj",
+        "projectUniqueName": "C:\\Users\\sjpda\\Documents\\GitHub\\Curso.Net\\LetrasRepetidasCsharp\\LetrasRepetidasCsharp\\LetrasRepetidasCsharp.csproj",
+        "projectName": "LetrasRepetidasCsharp",
+        "projectPath": "C:\\Users\\sjpda\\Documents\\GitHub\\Curso.Net\\LetrasRepetidasCsharp\\LetrasRepetidasCsharp\\LetrasRepetidasCsharp.csproj",
         "packagesPath": "C:\\Users\\sjpda\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sjpda\\source\\repos\\Danielsjp\\Curso.Net\\Letras\\obj\\",
+        "outputPath": "C:\\Users\\sjpda\\Documents\\GitHub\\Curso.Net\\LetrasRepetidasCsharp\\LetrasRepetidasCsharp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
