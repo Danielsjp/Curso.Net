@@ -1,0 +1,13 @@
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Letras2\Letras2\bin\Debug\netcoreapp3.1\Letras2.exe
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Letras2\Letras2\bin\Debug\netcoreapp3.1\Letras2.deps.json
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Letras2\Letras2\bin\Debug\netcoreapp3.1\Letras2.runtimeconfig.json
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Letras2\Letras2\bin\Debug\netcoreapp3.1\Letras2.runtimeconfig.dev.json
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Letras2\Letras2\bin\Debug\netcoreapp3.1\Letras2.dll
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Letras2\Letras2\bin\Debug\netcoreapp3.1\Letras2.pdb
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Letras2\Letras2\obj\Debug\netcoreapp3.1\Letras2.csprojAssemblyReference.cache
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Letras2\Letras2\obj\Debug\netcoreapp3.1\Letras2.csproj.CoreCompileInputs.cache
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Letras2\Letras2\obj\Debug\netcoreapp3.1\Letras2.AssemblyInfoInputs.cache
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Letras2\Letras2\obj\Debug\netcoreapp3.1\Letras2.AssemblyInfo.cs
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Letras2\Letras2\obj\Debug\netcoreapp3.1\Letras2.dll
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Letras2\Letras2\obj\Debug\netcoreapp3.1\Letras2.pdb
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Letras2\Letras2\obj\Debug\netcoreapp3.1\Letras2.genruntimeconfig.cache
