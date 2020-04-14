@@ -6,18 +6,11 @@ namespace Fase2
     {
         static void Main(string[] args)
         {
-            String nom, cognom1, cognom2;
-            int dia, mes, any;
-            nom = "Dani";
-            cognom1 = "Sanchez";
-            cognom2 = "Jimenez";
-            dia = 2;
-            mes = 10;
-            any = 1982;
-            var concatname = cognom1 + " " + cognom2 + " " + nom;
-            string concatdates = dia.ToString() + "/" + mes.ToString() + "das" + any.ToString();
-            Console.WriteLine(concatname);
-            Console.WriteLine(concatdates);
+            int traspas = 1948;
+            int seRepite = 4;
+            int fechaNacim = 1982;
+            int totaltraspas = (fechaNacim-traspas)/seRepite;
+            Console.WriteLine($"Anys de Traspas desde {traspas} fins {fechaNacim}: " + totaltraspas);
         }
     }
 }

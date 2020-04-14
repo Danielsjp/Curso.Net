@@ -10,3 +10,4 @@ C:\Users\sjpda\Documents\GitHub\Curso.Net\Variables\Fase2\obj\Debug\netcoreapp3.
 C:\Users\sjpda\Documents\GitHub\Curso.Net\Variables\Fase2\obj\Debug\netcoreapp3.1\Fase2.dll
 C:\Users\sjpda\Documents\GitHub\Curso.Net\Variables\Fase2\obj\Debug\netcoreapp3.1\Fase2.pdb
 C:\Users\sjpda\Documents\GitHub\Curso.Net\Variables\Fase2\obj\Debug\netcoreapp3.1\Fase2.genruntimeconfig.cache
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Variables\Fase2\obj\Debug\netcoreapp3.1\Fase2.csprojAssemblyReference.cache
