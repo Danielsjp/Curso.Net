@@ -1,0 +1,13 @@
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Variables\Fase3\obj\Debug\netcoreapp3.1\Fase3.csprojAssemblyReference.cache
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Variables\Fase3\obj\Debug\netcoreapp3.1\Fase3.csproj.CoreCompileInputs.cache
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Variables\Fase3\obj\Debug\netcoreapp3.1\Fase3.AssemblyInfoInputs.cache
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Variables\Fase3\obj\Debug\netcoreapp3.1\Fase3.AssemblyInfo.cs
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Variables\Fase3\bin\Debug\netcoreapp3.1\Fase3.exe
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Variables\Fase3\bin\Debug\netcoreapp3.1\Fase3.deps.json
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Variables\Fase3\bin\Debug\netcoreapp3.1\Fase3.runtimeconfig.json
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Variables\Fase3\bin\Debug\netcoreapp3.1\Fase3.runtimeconfig.dev.json
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Variables\Fase3\bin\Debug\netcoreapp3.1\Fase3.dll
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Variables\Fase3\bin\Debug\netcoreapp3.1\Fase3.pdb
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Variables\Fase3\obj\Debug\netcoreapp3.1\Fase3.dll
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Variables\Fase3\obj\Debug\netcoreapp3.1\Fase3.pdb
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Variables\Fase3\obj\Debug\netcoreapp3.1\Fase3.genruntimeconfig.cache
