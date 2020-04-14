@@ -15,8 +15,10 @@ namespace Letras2
             char[] arr;
             arr = nombre.ToCharArray();
             Console.WriteLine("Letra por letra");
+            //FASE 1 (MOSTRAR LETRAS)
             foreach (char c in arr)
                 Console.WriteLine(c);
+            //FASE 2 creamos una lista que usaremos mas tarde para indiar el tipo de letra.
             List<char> list = arr.ToList();
             surName = "SANCHEZ";
             char[] surNamechar;
@@ -30,19 +32,9 @@ namespace Letras2
                 {
                     Console.WriteLine("Los Nombres de personas no Continenen Numeros");
                 }
-                else
-                {
-                    if (p.Equals('a') | p.Equals('e') | p.Equals('i') | p.Equals('o') | p.Equals('u'))
-                    {
-                       // Console.WriteLine("VOCAL");
-                    }
-                    else
-                    {
-                        // Console.WriteLine("CONSONANTE");
-                    }
-                }
                 i++;
             }
+            //FASE 3 Contar el numero de veces que se repite cada letra
             for (int p = 0; p < arr.Length; p++)
             {
                 int count = 0;
@@ -67,8 +59,17 @@ namespace Letras2
                     }
                     else
                     {
-                        Console.WriteLine(list[p] + " se repite: " + count + "(CONSONANTE)");
-                        letr.Add(list[p], count);
+
+                        if (list[p] >= 0)
+                        {
+                            Console.WriteLine(list[p] + " se repite: " + count + "(NUMERO)");
+                            letr.Add(list[p], count);
+                        }
+                        else
+                        {
+                            Console.WriteLine(list[p] + " se repite: " + count + "(CONSONANTE)");
+                            letr.Add(list[p], count);
+                        }
                     }
                     foreach (KeyValuePair<char, int> let in letr)
                     {
@@ -87,7 +88,7 @@ namespace Letras2
                 }
                 return true;
             }
-
+            //FASE 4 lista con el nombre y el apellido.
              List<char> resultado = list.Concat(" ").Concat(SurNC).ToList();
             
             Console.WriteLine(resultado[4]);
