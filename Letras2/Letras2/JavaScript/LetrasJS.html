@@ -1,0 +1,63 @@
+<script>
+console.log("Introduzca su nombre");
+
+var surName;
+var nombre2 = [];
+let nombre = "Danieeel1";
+console.log(nombre);
+nombre2 = nombre.split("");
+var newArray = compressArray(nombre2);
+
+const found = nombre2.find(element => element > 0);
+if (found>0) {console.log('Los nombres no pueden contener numeros')}
+console.log(nombre2.length);
+function compressArray(nombre2) {
+ 
+ var compressed = [];
+ // make a copy of the input array
+ var copy = nombre2.slice(0);
+
+ // first loop goes over every element
+ for (var i = 0; i < nombre2.length; i++) 
+ 
+ {
+
+     var myCount = 0;	
+     // loop over every element in the copy and see if it's the same
+     for (var w = 0; w < copy.length; w++) 
+     {
+         if (nombre2[i] == copy[w]) 
+         {
+             // increase amount of times duplicate is found
+             myCount++;
+             // sets item to undefined
+             delete copy[w];
+         }
+     }
+    
+     
+
+
+     if (myCount > 0) 
+     
+     {
+         var a = new Object();
+         a.value = nombre2[i];
+         a.count = myCount;
+         compressed.push(a);
+     }
+
+     if (nombre2[i]=='a' || nombre2[i]=='e' || nombre2[i]=='i' || nombre2[i]=='o' || nombre2[i]=='u') {console.log(nombre2[i]+"-Vocal")} 
+     else {console.log(nombre2[i]+"-Consonante")}
+ }
+ 
+ return compressed;
+};
+
+console.log(newArray);
+console.log(Object.keys(newArray));
+
+</script>
+
+
+
