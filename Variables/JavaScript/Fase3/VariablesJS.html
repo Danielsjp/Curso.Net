@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var traspas = 1948;
+        var seRepite = 4;
+        var fechaNacim = 1982;
+        var condicion;
+
+            for (i = traspas; i<fechaNacim; i=i+1)
+            {            
+                resto = i % seRepite;
+                if (resto == 0) { condicion = true; OK = "L´any "+i+ " es de traspas: "+ condicion; console.log(OK); }      
+                else { condicion = false; KO = "L´any "+i+ " es de traspas: "+ condicion; console.log(KO); }
+            }
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+nom= "Dani", cognom1= "Sanchez", cognom2= "Jimenez";
+dia=02, mes=10, any=1982;
+concatnom = nom + " " + cognom1 + " " + cognom2;
+concatdata = String(dia) + "/" + String(mes) + "/" + any;
+            console.log("El meu nom es: "+concatnom);
+            console.log("La meva data de naixement es: "+concatdata);         
+            
+            resto = any % 4;
+            if (resto == 0) { condicion = true; console.log("El meu any de naixement es de traspas."); }
+            else { condicion = false; console.log("El meu any de naixement no es de traspas."); }
+    </script>
+</body>
+</html>
