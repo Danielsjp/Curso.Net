@@ -11,3 +11,16 @@ C:\Users\sjpda\source\repos\Ciudades\FASE3\bin\Debug\netcoreapp3.1\FASE3.pdb
 C:\Users\sjpda\source\repos\Ciudades\FASE3\obj\Debug\netcoreapp3.1\FASE3.dll
 C:\Users\sjpda\source\repos\Ciudades\FASE3\obj\Debug\netcoreapp3.1\FASE3.pdb
 C:\Users\sjpda\source\repos\Ciudades\FASE3\obj\Debug\netcoreapp3.1\FASE3.genruntimeconfig.cache
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Ciudades\FASE3\bin\Debug\netcoreapp3.1\FASE3.exe
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Ciudades\FASE3\bin\Debug\netcoreapp3.1\FASE3.deps.json
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Ciudades\FASE3\bin\Debug\netcoreapp3.1\FASE3.runtimeconfig.json
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Ciudades\FASE3\bin\Debug\netcoreapp3.1\FASE3.runtimeconfig.dev.json
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Ciudades\FASE3\bin\Debug\netcoreapp3.1\FASE3.dll
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Ciudades\FASE3\bin\Debug\netcoreapp3.1\FASE3.pdb
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Ciudades\FASE3\obj\Debug\netcoreapp3.1\FASE3.csprojAssemblyReference.cache
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Ciudades\FASE3\obj\Debug\netcoreapp3.1\FASE3.csproj.CoreCompileInputs.cache
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Ciudades\FASE3\obj\Debug\netcoreapp3.1\FASE3.AssemblyInfoInputs.cache
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Ciudades\FASE3\obj\Debug\netcoreapp3.1\FASE3.AssemblyInfo.cs
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Ciudades\FASE3\obj\Debug\netcoreapp3.1\FASE3.dll
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Ciudades\FASE3\obj\Debug\netcoreapp3.1\FASE3.pdb
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Ciudades\FASE3\obj\Debug\netcoreapp3.1\FASE3.genruntimeconfig.cache

@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sjpda\\source\\repos\\Ciudades\\FASE3\\FASE3.csproj",
+      "projectUniqueName": "C:\\Users\\sjpda\\Documents\\GitHub\\Curso.Net\\Ciudades\\FASE3\\FASE3.csproj",
       "projectName": "FASE3",
-      "projectPath": "C:\\Users\\sjpda\\source\\repos\\Ciudades\\FASE3\\FASE3.csproj",
+      "projectPath": "C:\\Users\\sjpda\\Documents\\GitHub\\Curso.Net\\Ciudades\\FASE3\\FASE3.csproj",
       "packagesPath": "C:\\Users\\sjpda\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sjpda\\source\\repos\\Ciudades\\FASE3\\obj\\",
+      "outputPath": "C:\\Users\\sjpda\\Documents\\GitHub\\Curso.Net\\Ciudades\\FASE3\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
