@@ -7,39 +7,17 @@
 </head>
 <body>
     <script>
+                            
+    var Madrid = 'Madrid';
+    var Barcelona = 'Barcelona'
+    var madridInvertido0 = Madrid.split('');
+    var bcnInvertido0 = Barcelona.split('');
+    var madridInvertido1 = madridInvertido0.reverse();
+    var bcnInvertido1 = bcnInvertido0.reverse();
 
-            var ciudad1 = 'Madrid';           
-            var ciudad2 = 'Barcelona';           
-            var ciudad3 = 'Gorono';          
-            var ciudad4 = 'Cádiz';          
-            var ciudad5 = 'Sevilla';            
-            var ciudad6 = 'Pamplona';
+    console.log(madridInvertido1);       
+    console.log(bcnInvertido1);            
             
-            var arrayCiudades = [   ciudad1, 
-                                    ciudad2, 
-                                    ciudad3,
-                                    ciudad4,
-                                    ciudad5,
-                                    ciudad6];
-            arrayCiudades.sort();
-            
-            var ciudadesModificadas;
-            
-            for (var i=0; i<arrayCiudades.length;i++)
-            {
-            if (arrayCiudades[i].includes('a')) 
-             {
-                var susti = arrayCiudades[i].replace('a','4');
-                arrayCiudades[i] = susti;
-                ciudadesModificadas = arrayCiudades;
-                
-             }
-                      
-            }
-            for (p in ciudadesModificadas)
-                {
-                    console.log(ciudadesModificadas[p]);
-                }       
     </script>
 </body>
 </html>
