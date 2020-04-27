@@ -1,0 +1,13 @@
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Restaurante\FASE2\bin\Debug\netcoreapp3.1\FASE2.exe
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Restaurante\FASE2\bin\Debug\netcoreapp3.1\FASE2.deps.json
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Restaurante\FASE2\bin\Debug\netcoreapp3.1\FASE2.runtimeconfig.json
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Restaurante\FASE2\bin\Debug\netcoreapp3.1\FASE2.runtimeconfig.dev.json
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Restaurante\FASE2\bin\Debug\netcoreapp3.1\FASE2.dll
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Restaurante\FASE2\bin\Debug\netcoreapp3.1\FASE2.pdb
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Restaurante\FASE2\obj\Debug\netcoreapp3.1\FASE2.csprojAssemblyReference.cache
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Restaurante\FASE2\obj\Debug\netcoreapp3.1\FASE2.csproj.CoreCompileInputs.cache
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Restaurante\FASE2\obj\Debug\netcoreapp3.1\FASE2.AssemblyInfoInputs.cache
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Restaurante\FASE2\obj\Debug\netcoreapp3.1\FASE2.AssemblyInfo.cs
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Restaurante\FASE2\obj\Debug\netcoreapp3.1\FASE2.dll
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Restaurante\FASE2\obj\Debug\netcoreapp3.1\FASE2.pdb
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Restaurante\FASE2\obj\Debug\netcoreapp3.1\FASE2.genruntimeconfig.cache
