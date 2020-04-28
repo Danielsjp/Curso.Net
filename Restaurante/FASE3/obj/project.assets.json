@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sjpda\\Documents\\GitHub\\Curso.Net\\Restaurante\\Restaurante\\FASE1.csproj",
-      "projectName": "FASE1",
-      "projectPath": "C:\\Users\\sjpda\\Documents\\GitHub\\Curso.Net\\Restaurante\\Restaurante\\FASE1.csproj",
+      "projectUniqueName": "C:\\Users\\sjpda\\Documents\\GitHub\\Curso.Net\\Restaurante\\FASE3\\FASE3.csproj",
+      "projectName": "FASE3",
+      "projectPath": "C:\\Users\\sjpda\\Documents\\GitHub\\Curso.Net\\Restaurante\\FASE3\\FASE3.csproj",
       "packagesPath": "C:\\Users\\sjpda\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sjpda\\Documents\\GitHub\\Curso.Net\\Restaurante\\Restaurante\\obj\\",
+      "outputPath": "C:\\Users\\sjpda\\Documents\\GitHub\\Curso.Net\\Restaurante\\FASE3\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Microsoft\\Xamarin\\NuGet\\",
