@@ -1,0 +1,13 @@
+C:\Users\sjpda\source\repos\notasExamen\notasExamen\bin\Debug\netcoreapp3.1\notasExamen.exe
+C:\Users\sjpda\source\repos\notasExamen\notasExamen\bin\Debug\netcoreapp3.1\notasExamen.deps.json
+C:\Users\sjpda\source\repos\notasExamen\notasExamen\bin\Debug\netcoreapp3.1\notasExamen.runtimeconfig.json
+C:\Users\sjpda\source\repos\notasExamen\notasExamen\bin\Debug\netcoreapp3.1\notasExamen.runtimeconfig.dev.json
+C:\Users\sjpda\source\repos\notasExamen\notasExamen\bin\Debug\netcoreapp3.1\notasExamen.dll
+C:\Users\sjpda\source\repos\notasExamen\notasExamen\bin\Debug\netcoreapp3.1\notasExamen.pdb
+C:\Users\sjpda\source\repos\notasExamen\notasExamen\obj\Debug\netcoreapp3.1\notasExamen.csprojAssemblyReference.cache
+C:\Users\sjpda\source\repos\notasExamen\notasExamen\obj\Debug\netcoreapp3.1\notasExamen.csproj.CoreCompileInputs.cache
+C:\Users\sjpda\source\repos\notasExamen\notasExamen\obj\Debug\netcoreapp3.1\notasExamen.AssemblyInfoInputs.cache
+C:\Users\sjpda\source\repos\notasExamen\notasExamen\obj\Debug\netcoreapp3.1\notasExamen.AssemblyInfo.cs
+C:\Users\sjpda\source\repos\notasExamen\notasExamen\obj\Debug\netcoreapp3.1\notasExamen.dll
+C:\Users\sjpda\source\repos\notasExamen\notasExamen\obj\Debug\netcoreapp3.1\notasExamen.pdb
+C:\Users\sjpda\source\repos\notasExamen\notasExamen\obj\Debug\netcoreapp3.1\notasExamen.genruntimeconfig.cache
