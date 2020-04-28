@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var billete5 = 5;
+        var billete10 = 10;
+        var billete20 = 20;
+        var billete50 = 50;
+        var billete100 = 100;
+        var billete200 = 200;
+        var billete500 = 500;
+        var cuenta= 0;
+        var menu = [];
+        menu.length = 5;
+        var precios = [];
+        precios.length = 5;
+
+        for(var i=0;i<5;i++)
+            {
+                console.log("Introduce Plato");
+                // menu[i]= Console.ReadLine();
+                console.log("Introduce Precio");
+                // precios[i] = Int32.Parse(Console.ReadLine());
+            }
+        for (var i = 0; i < 5; i++)
+            {
+                // Console.WriteLine("Numero:"+i+"//Plato:"+menu[i]+"//"+"Precio:"+precios[i]);
+            }
+
+            var list = []; 
+            var Salir=false;                                
+            while (Salir==false)
+            {
+                console.log("¿Que quieres comer?");
+                // eleccion.Add(Console.ReadLine());
+                list.push('macarrones', 'Pescado');
+                console.log("¿Quieres Salir? Si/No");
+                //var respuesta = Console.ReadLine();
+                if (respuesta == "Si") {Salir = true; }               
+            }
+            for (var y =0; y<5; y++)
+            {                
+                for (var i = 0; i < 5; i++)
+                {                   
+                    if (eleccion[y] == menu[i])
+                    { cuenta = cuenta + precios[i]; }                    
+                }
+                if (menu.Contains(plato) == false) {console.log("plato No Existe");}
+            }
+            console.log("Cantidad a pagar:"+cuenta); 
+
+</script>
+</body>
+</html>
