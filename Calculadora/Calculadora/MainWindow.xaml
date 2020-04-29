@@ -1,0 +1,22 @@
+﻿<Window x:Class="Calculadora.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calculadora"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="420" Width="772">
+    <Grid Margin="0,0,566,269" Background="#FF098DA2">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="6*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="Num1" HorizontalAlignment="Left" Margin="30,21,0,0" Text="Introduce Valor" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="18"/>
+        <TextBox x:Name="Num2" HorizontalAlignment="Left" Margin="30,44,0,0" Text="Introduce Valor" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="18"/>
+        <Button Content="+" HorizontalAlignment="Left" Margin="30,67,0,0" VerticalAlignment="Top" Click="Button_Click_1" Width="22" Height="20"/>
+        <Button Content="-" HorizontalAlignment="Left" Margin="57,67,0,0" VerticalAlignment="Top" Width="28" Height="20" Click="Button_Click"/>
+        <Button Content="*" HorizontalAlignment="Left" Margin="90,67,0,0" VerticalAlignment="Top" Width="28" Height="20" Click="Button_Click_2"/>
+        <Button Content="/" HorizontalAlignment="Left" Margin="123,66,0,0" VerticalAlignment="Top" Width="27" Height="21" Click="Button_Click_3"/>
+
+    </Grid>
+</Window>

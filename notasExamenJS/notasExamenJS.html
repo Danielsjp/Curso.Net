@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        console.log("Bienvenid@ al programa para gestión de alumnos");
+        console.log("Introduzca las notas de los alumnos");
+               
+        // 1 meter 10 notas en vez 5
+        var notasDeAlumnos = new Array();
+        
+        notasDeAlumnos.push(4.6);
+        notasDeAlumnos.push(2.3);
+        notasDeAlumnos.push(6);
+        notasDeAlumnos.push(3.9);
+        notasDeAlumnos.push(8.5);
+        notasDeAlumnos.push(3.6);
+        notasDeAlumnos.push(2.6);
+        notasDeAlumnos.push(2);
+        notasDeAlumnos.push(3.9);
+        notasDeAlumnos.push(5.5);
+        
+        // 2 ajustar la media
+        var suma = notasDeAlumnos[0] +
+                                notasDeAlumnos[1] +
+                                notasDeAlumnos[2] +
+                                notasDeAlumnos[3] +
+                                notasDeAlumnos[4] +
+                                notasDeAlumnos[5] +
+                                notasDeAlumnos[6] +
+                                notasDeAlumnos[7] +
+                                notasDeAlumnos[8] +
+                                notasDeAlumnos[9];
+        
+        var media = suma / notasDeAlumnos.length;
+        console.log("la media es " + media);
+        
+        // 3 extraer la nota más alta del array y enseñarla en pantalla
+        var max = notasDeAlumnos[0];
+        
+        if (notasDeAlumnos[1] > max)
+            max = notasDeAlumnos[1];
+        
+        if (notasDeAlumnos[2] > max)
+            max = notasDeAlumnos[2];
+        
+        if (notasDeAlumnos[3] > max)
+            max = notasDeAlumnos[3];
+        
+        if (notasDeAlumnos[4] > max)
+            max = notasDeAlumnos[4];
+        
+        if (notasDeAlumnos[5] > max)
+            max = notasDeAlumnos[5];
+        
+        if (notasDeAlumnos[6] > max)
+            max = notasDeAlumnos[6];
+        
+        if (notasDeAlumnos[7] > max)
+            max = notasDeAlumnos[7];
+        
+        if (notasDeAlumnos[8] > max)
+            max = notasDeAlumnos[8];
+        
+        if (notasDeAlumnos[9] > max)
+            max = notasDeAlumnos[9];
+
+        //  3 otra manera de extraer la nota más alta del array y enseñarla en pantalla
+
+        console.log("La media sacada de otra forma:"+ Math.max.apply(Math,notasDeAlumnos))
+        
+        
+        console.log("el máximo valor es " + max);
+        
+        // 4 extraer la nota más baja del array y enseñarña en pantalla
+        var min = notasDeAlumnos[0];
+        
+        if (notasDeAlumnos[1] < min)
+            min = notasDeAlumnos[1];
+        
+        if (notasDeAlumnos[2] < min)
+            min = notasDeAlumnos[2];
+        
+        if (notasDeAlumnos[3] < min)
+            min = notasDeAlumnos[3];
+        
+        if (notasDeAlumnos[4] < min)
+            min = notasDeAlumnos[4];
+        
+        if (notasDeAlumnos[5] < min)
+            min = notasDeAlumnos[5];
+        
+        if (notasDeAlumnos[6] < min)
+            min = notasDeAlumnos[6];
+        
+        if (notasDeAlumnos[7] < min)
+            min = notasDeAlumnos[7];
+        
+        if (notasDeAlumnos[8] < min)
+            min = notasDeAlumnos[8];
+        
+        if (notasDeAlumnos[9] < min)
+            min = notasDeAlumnos[9];
+        
+        
+        console.log("el mínimo valor es " + min);
+        </script>
+</body>
+</html>
