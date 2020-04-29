@@ -17,6 +17,39 @@
                 var suma = num1 + num2;
                 alert(suma);
             }
+            function Resta()
+            {
+                var num1Text = document.getElementById("Num1").value;
+                var num2Text = Num2.value;
+    
+                var num1 = num1Text * 1;
+                var num2 = num2Text * 1;
+    
+                var resta = num1 - num2;
+                alert(resta);
+            }
+            function División()
+            {
+                var num1Text = document.getElementById("Num1").value;
+                var num2Text = Num2.value;
+    
+                var num1 = num1Text * 1;
+                var num2 = num2Text * 1;
+    
+                var division = num1 / num2;
+                alert(division);
+            }
+            function Multiplicación()
+            {
+                var num1Text = document.getElementById("Num1").value;
+                var num2Text = Num2.value;
+    
+                var num1 = num1Text * 1;
+                var num2 = num2Text * 1;
+    
+                var multiplicacion = num1 * num2;
+                alert(multiplicacion);
+            }
     </script>
 <body>
         <div>
@@ -24,6 +57,9 @@
             <input id="Num2" type="text" /></div><br>
     
             <input type="button" value="Suma" onclick="Suma()"/>
+            <input type="button" value="Resta" onclick="Resta()"/>
+            <input type="button" value="Multiplicación" onclick="Multiplicación()"/>
+            <input type="button" value="División" onclick="División()"/>
         </div>
 </body>
 </html>
