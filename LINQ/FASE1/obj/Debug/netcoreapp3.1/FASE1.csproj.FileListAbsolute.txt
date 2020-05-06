@@ -1,0 +1,13 @@
+C:\Users\sjpda\Documents\GitHub\Curso.Net\LINQ\FASE1\bin\Debug\netcoreapp3.1\FASE1.exe
+C:\Users\sjpda\Documents\GitHub\Curso.Net\LINQ\FASE1\bin\Debug\netcoreapp3.1\FASE1.deps.json
+C:\Users\sjpda\Documents\GitHub\Curso.Net\LINQ\FASE1\bin\Debug\netcoreapp3.1\FASE1.runtimeconfig.json
+C:\Users\sjpda\Documents\GitHub\Curso.Net\LINQ\FASE1\bin\Debug\netcoreapp3.1\FASE1.runtimeconfig.dev.json
+C:\Users\sjpda\Documents\GitHub\Curso.Net\LINQ\FASE1\bin\Debug\netcoreapp3.1\FASE1.dll
+C:\Users\sjpda\Documents\GitHub\Curso.Net\LINQ\FASE1\bin\Debug\netcoreapp3.1\FASE1.pdb
+C:\Users\sjpda\Documents\GitHub\Curso.Net\LINQ\FASE1\obj\Debug\netcoreapp3.1\FASE1.csprojAssemblyReference.cache
+C:\Users\sjpda\Documents\GitHub\Curso.Net\LINQ\FASE1\obj\Debug\netcoreapp3.1\FASE1.csproj.CoreCompileInputs.cache
+C:\Users\sjpda\Documents\GitHub\Curso.Net\LINQ\FASE1\obj\Debug\netcoreapp3.1\FASE1.AssemblyInfoInputs.cache
+C:\Users\sjpda\Documents\GitHub\Curso.Net\LINQ\FASE1\obj\Debug\netcoreapp3.1\FASE1.AssemblyInfo.cs
+C:\Users\sjpda\Documents\GitHub\Curso.Net\LINQ\FASE1\obj\Debug\netcoreapp3.1\FASE1.dll
+C:\Users\sjpda\Documents\GitHub\Curso.Net\LINQ\FASE1\obj\Debug\netcoreapp3.1\FASE1.pdb
+C:\Users\sjpda\Documents\GitHub\Curso.Net\LINQ\FASE1\obj\Debug\netcoreapp3.1\FASE1.genruntimeconfig.cache
