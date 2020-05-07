@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sjpda\\source\\repos\\AplicacionConsolaNotas\\6_Aplicacion 2 Solucion Parcial Validation Results\\6_Aplicacion 2 Solucion Parcial Validation Results.csproj": {}
+    "C:\\Users\\sjpda\\Documents\\GitHub\\Curso.Net\\AplicacionConsolaNotas\\6_Aplicacion 2 Solucion Parcial Validation Results\\6_Aplicacion 2 Solucion Parcial Validation Results.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sjpda\\source\\repos\\AplicacionConsolaNotas\\6_Aplicacion 2 Solucion Parcial Validation Results\\6_Aplicacion 2 Solucion Parcial Validation Results.csproj": {
+    "C:\\Users\\sjpda\\Documents\\GitHub\\Curso.Net\\AplicacionConsolaNotas\\6_Aplicacion 2 Solucion Parcial Validation Results\\6_Aplicacion 2 Solucion Parcial Validation Results.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sjpda\\source\\repos\\AplicacionConsolaNotas\\6_Aplicacion 2 Solucion Parcial Validation Results\\6_Aplicacion 2 Solucion Parcial Validation Results.csproj",
+        "projectUniqueName": "C:\\Users\\sjpda\\Documents\\GitHub\\Curso.Net\\AplicacionConsolaNotas\\6_Aplicacion 2 Solucion Parcial Validation Results\\6_Aplicacion 2 Solucion Parcial Validation Results.csproj",
         "projectName": "6_Aplicacion 2 Solucion Parcial Validation Results",
-        "projectPath": "C:\\Users\\sjpda\\source\\repos\\AplicacionConsolaNotas\\6_Aplicacion 2 Solucion Parcial Validation Results\\6_Aplicacion 2 Solucion Parcial Validation Results.csproj",
+        "projectPath": "C:\\Users\\sjpda\\Documents\\GitHub\\Curso.Net\\AplicacionConsolaNotas\\6_Aplicacion 2 Solucion Parcial Validation Results\\6_Aplicacion 2 Solucion Parcial Validation Results.csproj",
         "packagesPath": "C:\\Users\\sjpda\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sjpda\\source\\repos\\AplicacionConsolaNotas\\6_Aplicacion 2 Solucion Parcial Validation Results\\obj\\",
+        "outputPath": "C:\\Users\\sjpda\\Documents\\GitHub\\Curso.Net\\AplicacionConsolaNotas\\6_Aplicacion 2 Solucion Parcial Validation Results\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Microsoft\\Xamarin\\NuGet\\",

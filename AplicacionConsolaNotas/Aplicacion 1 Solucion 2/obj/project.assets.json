@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sjpda\\source\\repos\\AplicacionConsolaNotas\\Aplicacion 1 Solucion 2\\3_Aplicacion 1 Solucion 2.csproj",
+      "projectUniqueName": "C:\\Users\\sjpda\\Documents\\GitHub\\Curso.Net\\AplicacionConsolaNotas\\Aplicacion 1 Solucion 2\\3_Aplicacion 1 Solucion 2.csproj",
       "projectName": "3_Aplicacion 1 Solucion 2",
-      "projectPath": "C:\\Users\\sjpda\\source\\repos\\AplicacionConsolaNotas\\Aplicacion 1 Solucion 2\\3_Aplicacion 1 Solucion 2.csproj",
+      "projectPath": "C:\\Users\\sjpda\\Documents\\GitHub\\Curso.Net\\AplicacionConsolaNotas\\Aplicacion 1 Solucion 2\\3_Aplicacion 1 Solucion 2.csproj",
       "packagesPath": "C:\\Users\\sjpda\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sjpda\\source\\repos\\AplicacionConsolaNotas\\Aplicacion 1 Solucion 2\\obj\\",
+      "outputPath": "C:\\Users\\sjpda\\Documents\\GitHub\\Curso.Net\\AplicacionConsolaNotas\\Aplicacion 1 Solucion 2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Microsoft\\Xamarin\\NuGet\\",

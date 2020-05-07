@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sjpda\\source\\repos\\AplicacionConsolaNotas\\7_Aplicacion 2 OPP Solucion Parcial 3 Repositorios\\7_Aplicacion 2 OPP Solucion Parcial 3 Repositorios.csproj",
+      "projectUniqueName": "C:\\Users\\sjpda\\Documents\\GitHub\\Curso.Net\\AplicacionConsolaNotas\\7_Aplicacion 2 OPP Solucion Parcial 3 Repositorios\\7_Aplicacion 2 OPP Solucion Parcial 3 Repositorios.csproj",
       "projectName": "7_Aplicacion 2 OPP Solucion Parcial 3 Repositorios",
-      "projectPath": "C:\\Users\\sjpda\\source\\repos\\AplicacionConsolaNotas\\7_Aplicacion 2 OPP Solucion Parcial 3 Repositorios\\7_Aplicacion 2 OPP Solucion Parcial 3 Repositorios.csproj",
+      "projectPath": "C:\\Users\\sjpda\\Documents\\GitHub\\Curso.Net\\AplicacionConsolaNotas\\7_Aplicacion 2 OPP Solucion Parcial 3 Repositorios\\7_Aplicacion 2 OPP Solucion Parcial 3 Repositorios.csproj",
       "packagesPath": "C:\\Users\\sjpda\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sjpda\\source\\repos\\AplicacionConsolaNotas\\7_Aplicacion 2 OPP Solucion Parcial 3 Repositorios\\obj\\",
+      "outputPath": "C:\\Users\\sjpda\\Documents\\GitHub\\Curso.Net\\AplicacionConsolaNotas\\7_Aplicacion 2 OPP Solucion Parcial 3 Repositorios\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Microsoft\\Xamarin\\NuGet\\",

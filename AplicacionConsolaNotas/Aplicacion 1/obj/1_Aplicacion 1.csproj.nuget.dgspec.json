@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sjpda\\source\\repos\\AplicacionConsolaNotas\\Aplicacion 1\\1_Aplicacion 1.csproj": {}
+    "C:\\Users\\sjpda\\Documents\\GitHub\\Curso.Net\\AplicacionConsolaNotas\\Aplicacion 1\\1_Aplicacion 1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sjpda\\source\\repos\\AplicacionConsolaNotas\\Aplicacion 1\\1_Aplicacion 1.csproj": {
+    "C:\\Users\\sjpda\\Documents\\GitHub\\Curso.Net\\AplicacionConsolaNotas\\Aplicacion 1\\1_Aplicacion 1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sjpda\\source\\repos\\AplicacionConsolaNotas\\Aplicacion 1\\1_Aplicacion 1.csproj",
+        "projectUniqueName": "C:\\Users\\sjpda\\Documents\\GitHub\\Curso.Net\\AplicacionConsolaNotas\\Aplicacion 1\\1_Aplicacion 1.csproj",
         "projectName": "1_Aplicacion 1",
-        "projectPath": "C:\\Users\\sjpda\\source\\repos\\AplicacionConsolaNotas\\Aplicacion 1\\1_Aplicacion 1.csproj",
+        "projectPath": "C:\\Users\\sjpda\\Documents\\GitHub\\Curso.Net\\AplicacionConsolaNotas\\Aplicacion 1\\1_Aplicacion 1.csproj",
         "packagesPath": "C:\\Users\\sjpda\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sjpda\\source\\repos\\AplicacionConsolaNotas\\Aplicacion 1\\obj\\",
+        "outputPath": "C:\\Users\\sjpda\\Documents\\GitHub\\Curso.Net\\AplicacionConsolaNotas\\Aplicacion 1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Microsoft\\Xamarin\\NuGet\\",

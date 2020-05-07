@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sjpda\\source\\repos\\AplicacionConsolaNotas\\5_Aplicacion 2 OPP Solucion Parcial\\5_Aplicacion 2 OPP Solucion Parcial.csproj",
+      "projectUniqueName": "C:\\Users\\sjpda\\Documents\\GitHub\\Curso.Net\\AplicacionConsolaNotas\\5_Aplicacion 2 OPP Solucion Parcial\\5_Aplicacion 2 OPP Solucion Parcial.csproj",
       "projectName": "5_Aplicacion 2 OPP Solucion Parcial",
-      "projectPath": "C:\\Users\\sjpda\\source\\repos\\AplicacionConsolaNotas\\5_Aplicacion 2 OPP Solucion Parcial\\5_Aplicacion 2 OPP Solucion Parcial.csproj",
+      "projectPath": "C:\\Users\\sjpda\\Documents\\GitHub\\Curso.Net\\AplicacionConsolaNotas\\5_Aplicacion 2 OPP Solucion Parcial\\5_Aplicacion 2 OPP Solucion Parcial.csproj",
       "packagesPath": "C:\\Users\\sjpda\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sjpda\\source\\repos\\AplicacionConsolaNotas\\5_Aplicacion 2 OPP Solucion Parcial\\obj\\",
+      "outputPath": "C:\\Users\\sjpda\\Documents\\GitHub\\Curso.Net\\AplicacionConsolaNotas\\5_Aplicacion 2 OPP Solucion Parcial\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Microsoft\\Xamarin\\NuGet\\",
