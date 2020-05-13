@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sjpda\\Documents\\GitHub\\Curso.Net\\notasExamen\\notasExamen\\notasExamen.csproj",
-      "projectName": "notasExamen",
-      "projectPath": "C:\\Users\\sjpda\\Documents\\GitHub\\Curso.Net\\notasExamen\\notasExamen\\notasExamen.csproj",
+      "projectUniqueName": "C:\\Users\\sjpda\\source\\repos\\GestionAlumnodsdZero\\GestionAlumnodsdZero\\GestionAlumnodsdZero.csproj",
+      "projectName": "GestionAlumnodsdZero",
+      "projectPath": "C:\\Users\\sjpda\\source\\repos\\GestionAlumnodsdZero\\GestionAlumnodsdZero\\GestionAlumnodsdZero.csproj",
       "packagesPath": "C:\\Users\\sjpda\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sjpda\\Documents\\GitHub\\Curso.Net\\notasExamen\\notasExamen\\obj\\",
+      "outputPath": "C:\\Users\\sjpda\\source\\repos\\GestionAlumnodsdZero\\GestionAlumnodsdZero\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Microsoft\\Xamarin\\NuGet\\",
