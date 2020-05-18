@@ -6,6 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Threading.Tasks.Dataflow;
 using GestionAlumnodsdZero.Lib.Models;
+using GestionAlumnodsdZero.Context;
 
 namespace GestionAlumnodsdZero
 {
@@ -13,12 +14,18 @@ namespace GestionAlumnodsdZero
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Bienvenido al gestor de alumnos");
+
+
+ 
+
+            #region menu
+            Console.WriteLine(">Bienvenido al gestor de alumnos<");
             Console.WriteLine("Escriba add para añadir alumnos");
             Console.WriteLine("Escriba asigna para añadir asignaturas");
             Console.WriteLine("Escriba nota para añadir notas");
-            Console.WriteLine("Escriba show para ver alumnos");
-
+            Console.WriteLine("Escriba show para ver alumnos"); 
+            #endregion
+            
             var opcion = Console.ReadLine();
             var continua = true;
             while (continua)
@@ -49,11 +56,11 @@ namespace GestionAlumnodsdZero
                 var dni = Console.ReadLine();
                 var student = new Student
                 {
-                    Id = Guid.NewGuid(),
+                   
                     Dni = dni,
                     Name = name
                 };
-                Students.Add(student.Id, student);
+                student.Save();
                 menuprincipal();
             }
 
@@ -69,18 +76,18 @@ namespace GestionAlumnodsdZero
                     Asignatura = asigna,
                     Profesor = profe
                 };
-                Asignaturas.Add(listaasignaturas.Id, listaasignaturas);
+                Context.DbContext.Asignaturas.Add(listaasignaturas.Id, listaasignaturas);
                 menuprincipal();
             }
             static void menualumnodel()
             {
                 Console.WriteLine("introduce nombre del alumno");
                 var alumno = Console.ReadLine();
-                foreach (var student in Students.Values)
+                foreach (var student in Context.DbContext.Students.Values)
                 {
                     if (student.Name == alumno)
                     {
-                        Students.Remove(student.Id);
+                        Context.DbContext.Students.Remove(student.Id);
                         menuprincipal();
                     }
                     else { Console.WriteLine("NO EXISTE"); menuprincipal(); }
@@ -140,24 +147,24 @@ namespace GestionAlumnodsdZero
             }
             static void ShowAllStudents()
             {
-                foreach (var student in Students.Values)
+                foreach (var student in Context.DbContext.Students.Values)
                 {
-                    Console.WriteLine($"{student.Dni} {student.Name}");
+                    Console.WriteLine($"{student.Dni} // {student.Name}");
                 }
 
                 menuprincipal();
             }
             static void shownota()
             {
-                foreach (var loquesea in Marks.Values)
+                foreach (var loquesea in Context.DbContext.Marks.Values)
                 {
-                    Console.WriteLine(loquesea.Mark + "//" + loquesea.Student.Name + "//" + loquesea.Subject.Asignatura);
+                    Console.WriteLine(loquesea.Mark + " // " + loquesea.Student.Name + " // " + loquesea.Subject.Asignatura);
                 }
                 menuprincipal();
             }
             static void Showmenuasigna()
             {
-                foreach (var asigna in Asignaturas.Values)
+                foreach (var asigna in Context.DbContext.Asignaturas.Values)
                 {
                     Console.WriteLine($"{asigna.Asignatura} {asigna.Profesor}");
                 }
@@ -167,7 +174,7 @@ namespace GestionAlumnodsdZero
             {
                 Console.WriteLine("introduce nombre del alumno");
                 var alumno = Console.ReadLine();
-                foreach (var student in Students.Values)
+                foreach (var student in Context.DbContext.Students.Values)
                 {
                     if (student.Name == alumno)
                     {
@@ -186,8 +193,8 @@ namespace GestionAlumnodsdZero
                 Console.WriteLine("Enter the subject or write ESC to exit:");
                 var subjName = Console.ReadLine();
                 var mark = 5;
-                var student = Students.Values.FirstOrDefault(x => x.Dni == dni);
-                var subject = Asignaturas.Values.FirstOrDefault(x => x.Asignatura == subjName);
+                var student = Context.DbContext.Students.Values.FirstOrDefault(x => x.Dni == dni);
+                var subject = Context.DbContext.Asignaturas.Values.FirstOrDefault(x => x.Asignatura == subjName);
                 var exam = new exam
                 {
                     Id = Guid.NewGuid(),
@@ -197,17 +204,14 @@ namespace GestionAlumnodsdZero
                     TimeStamp = DateTime.Now
                 };
 
-                Marks.Add(exam.Id, exam);
+                Context.DbContext.Marks.Add(exam.Id, exam);
                 //student.AddExam(Exams[exam.Id]);
                
                     Console.WriteLine("la nota"+mark+"ha sido añadida para el estudiante"+student.Name);
                 
             }
         }       
-        public static Dictionary<Guid, Student> Students = new Dictionary<Guid, Student>();
-        public static Dictionary<string, Student> StudentByDni = new Dictionary<string, Student>();
-        public static Dictionary<Guid, asignaturas> Asignaturas = new Dictionary<Guid, asignaturas>();
-        public static Dictionary<Guid, exam> Marks = new Dictionary<Guid, exam>();
+        
     }
 }
 

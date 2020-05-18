@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sjpda\\source\\repos\\GestionAlumnodsdZero\\GestionAlumnodsdZero\\GestionAlumnodsdZero.csproj": {}
+    "C:\\Users\\sjpda\\Documents\\GitHub\\Curso.Net\\GestionAlumnodsdZero\\GestionAlumnodsdZero\\GestionAlumnodsdZero.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sjpda\\source\\repos\\GestionAlumnodsdZero\\GestionAlumnodsdZero\\GestionAlumnodsdZero.csproj": {
+    "C:\\Users\\sjpda\\Documents\\GitHub\\Curso.Net\\GestionAlumnodsdZero\\GestionAlumnodsdZero\\GestionAlumnodsdZero.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sjpda\\source\\repos\\GestionAlumnodsdZero\\GestionAlumnodsdZero\\GestionAlumnodsdZero.csproj",
+        "projectUniqueName": "C:\\Users\\sjpda\\Documents\\GitHub\\Curso.Net\\GestionAlumnodsdZero\\GestionAlumnodsdZero\\GestionAlumnodsdZero.csproj",
         "projectName": "GestionAlumnodsdZero",
-        "projectPath": "C:\\Users\\sjpda\\source\\repos\\GestionAlumnodsdZero\\GestionAlumnodsdZero\\GestionAlumnodsdZero.csproj",
+        "projectPath": "C:\\Users\\sjpda\\Documents\\GitHub\\Curso.Net\\GestionAlumnodsdZero\\GestionAlumnodsdZero\\GestionAlumnodsdZero.csproj",
         "packagesPath": "C:\\Users\\sjpda\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sjpda\\source\\repos\\GestionAlumnodsdZero\\GestionAlumnodsdZero\\obj\\",
+        "outputPath": "C:\\Users\\sjpda\\Documents\\GitHub\\Curso.Net\\GestionAlumnodsdZero\\GestionAlumnodsdZero\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Microsoft\\Xamarin\\NuGet\\",

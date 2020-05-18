@@ -11,3 +11,16 @@ C:\Users\sjpda\source\repos\GestionAlumnodsdZero\GestionAlumnodsdZero\obj\Debug\
 C:\Users\sjpda\source\repos\GestionAlumnodsdZero\GestionAlumnodsdZero\obj\Debug\netcoreapp3.1\GestionAlumnodsdZero.dll
 C:\Users\sjpda\source\repos\GestionAlumnodsdZero\GestionAlumnodsdZero\obj\Debug\netcoreapp3.1\GestionAlumnodsdZero.pdb
 C:\Users\sjpda\source\repos\GestionAlumnodsdZero\GestionAlumnodsdZero\obj\Debug\netcoreapp3.1\GestionAlumnodsdZero.genruntimeconfig.cache
+C:\Users\sjpda\Documents\GitHub\Curso.Net\GestionAlumnodsdZero\GestionAlumnodsdZero\bin\Debug\netcoreapp3.1\GestionAlumnodsdZero.exe
+C:\Users\sjpda\Documents\GitHub\Curso.Net\GestionAlumnodsdZero\GestionAlumnodsdZero\bin\Debug\netcoreapp3.1\GestionAlumnodsdZero.deps.json
+C:\Users\sjpda\Documents\GitHub\Curso.Net\GestionAlumnodsdZero\GestionAlumnodsdZero\bin\Debug\netcoreapp3.1\GestionAlumnodsdZero.runtimeconfig.json
+C:\Users\sjpda\Documents\GitHub\Curso.Net\GestionAlumnodsdZero\GestionAlumnodsdZero\bin\Debug\netcoreapp3.1\GestionAlumnodsdZero.runtimeconfig.dev.json
+C:\Users\sjpda\Documents\GitHub\Curso.Net\GestionAlumnodsdZero\GestionAlumnodsdZero\bin\Debug\netcoreapp3.1\GestionAlumnodsdZero.dll
+C:\Users\sjpda\Documents\GitHub\Curso.Net\GestionAlumnodsdZero\GestionAlumnodsdZero\bin\Debug\netcoreapp3.1\GestionAlumnodsdZero.pdb
+C:\Users\sjpda\Documents\GitHub\Curso.Net\GestionAlumnodsdZero\GestionAlumnodsdZero\obj\Debug\netcoreapp3.1\GestionAlumnodsdZero.csprojAssemblyReference.cache
+C:\Users\sjpda\Documents\GitHub\Curso.Net\GestionAlumnodsdZero\GestionAlumnodsdZero\obj\Debug\netcoreapp3.1\GestionAlumnodsdZero.csproj.CoreCompileInputs.cache
+C:\Users\sjpda\Documents\GitHub\Curso.Net\GestionAlumnodsdZero\GestionAlumnodsdZero\obj\Debug\netcoreapp3.1\GestionAlumnodsdZero.AssemblyInfoInputs.cache
+C:\Users\sjpda\Documents\GitHub\Curso.Net\GestionAlumnodsdZero\GestionAlumnodsdZero\obj\Debug\netcoreapp3.1\GestionAlumnodsdZero.AssemblyInfo.cs
+C:\Users\sjpda\Documents\GitHub\Curso.Net\GestionAlumnodsdZero\GestionAlumnodsdZero\obj\Debug\netcoreapp3.1\GestionAlumnodsdZero.dll
+C:\Users\sjpda\Documents\GitHub\Curso.Net\GestionAlumnodsdZero\GestionAlumnodsdZero\obj\Debug\netcoreapp3.1\GestionAlumnodsdZero.pdb
+C:\Users\sjpda\Documents\GitHub\Curso.Net\GestionAlumnodsdZero\GestionAlumnodsdZero\obj\Debug\netcoreapp3.1\GestionAlumnodsdZero.genruntimeconfig.cache
