@@ -33,5 +33,15 @@ namespace GestionAlumnodsdZero.Context
             return true;
         }
 
+        public static bool AlumoDel(Student student)
+        {       
+            Students.Remove(student.Id);
+            return true;           
+        }
+
+
+
+
+
     }
 }

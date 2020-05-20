@@ -64,6 +64,26 @@ namespace GestionAlumnodsdZero
                 menuprincipal();
             }
 
+            static void menualumnodel()
+            {
+
+                Console.WriteLine("Introduzca DNI Alumno");
+                var delStudent = Console.ReadLine();
+
+                foreach (var student in Context.DbContext.StudentByDni.Values)
+                {
+                    if (student.Dni == delStudent)
+                    {
+                        student.Delete();
+                        Console.WriteLine($"Student {delStudent} has been deleted");
+                    }
+                }
+
+                menuprincipal();
+
+            };
+
+
             static void addasigna()
             {
                 Console.WriteLine("Introduzca Asignatura Alumno");
@@ -79,21 +99,7 @@ namespace GestionAlumnodsdZero
                 Context.DbContext.Asignaturas.Add(listaasignaturas.Id, listaasignaturas);
                 menuprincipal();
             }
-            static void menualumnodel()
-            {
-                Console.WriteLine("introduce nombre del alumno");
-                var alumno = Console.ReadLine();
-                foreach (var student in Context.DbContext.Students.Values)
-                {
-                    if (student.Name == alumno)
-                    {
-                        Context.DbContext.Students.Remove(student.Id);
-                        menuprincipal();
-                    }
-                    else { Console.WriteLine("NO EXISTE"); menuprincipal(); }
-                }
-                menuprincipal();
-            }
+           
             static void menuprincipal()
             {
                 Console.WriteLine("Bienvenido al gestor de alumnos");
@@ -149,7 +155,7 @@ namespace GestionAlumnodsdZero
             {
                 foreach (var student in Context.DbContext.Students.Values)
                 {
-                    Console.WriteLine($"{student.Dni} // {student.Name}");
+                    Console.WriteLine($"{student.Dni} /./ {student.Name}");
                 }
 
                 menuprincipal();

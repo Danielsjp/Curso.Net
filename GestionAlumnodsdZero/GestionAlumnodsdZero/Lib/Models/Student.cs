@@ -50,5 +50,11 @@ namespace GestionAlumnodsdZero
             }
             return true;
         }
+        public bool Delete()
+        {
+            Context.DbContext.AlumoDel(this);
+
+            return true;
+        }
     }
 }
