@@ -8,7 +8,7 @@ using System.ComponentModel.Design;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Threading.Tasks.Dataflow;
-
+using System.Security.Cryptography.X509Certificates;
 
 namespace GestionAlumnodsdZero.Context
 {
@@ -40,6 +40,13 @@ namespace GestionAlumnodsdZero.Context
         }
 
 
+        public static void addasigna(asignaturas listaasignaturas)
+        {
+        
+            
+            Asignaturas.Add(listaasignaturas.Id, listaasignaturas);
+            
+        }
 
 
 

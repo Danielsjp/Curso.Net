@@ -40,7 +40,7 @@ namespace GestionAlumnodsdZero
                 }
                 if (opcion == "asigna")
                 {
-                    addasigna();
+                    menuaddasigna();
                 }
                 if (opcion == "nota")
                 {
@@ -84,7 +84,7 @@ namespace GestionAlumnodsdZero
             };
 
 
-            static void addasigna()
+            static void menuaddasigna()
             {
                 Console.WriteLine("Introduzca Asignatura Alumno");
                 var asigna = Console.ReadLine();
@@ -96,10 +96,11 @@ namespace GestionAlumnodsdZero
                     Asignatura = asigna,
                     Profesor = profe
                 };
-                Context.DbContext.Asignaturas.Add(listaasignaturas.Id, listaasignaturas);
+                listaasignaturas.Save();
+                Console.WriteLine("Asignatura grabada");
                 menuprincipal();
             }
-           
+
             static void menuprincipal()
             {
                 Console.WriteLine("Bienvenido al gestor de alumnos");
@@ -139,7 +140,7 @@ namespace GestionAlumnodsdZero
                     }
                     if (opcion == "asigna")
                     {
-                        addasigna();
+                        menuaddasigna();
                     }
                     if (opcion == "nota")
                     {

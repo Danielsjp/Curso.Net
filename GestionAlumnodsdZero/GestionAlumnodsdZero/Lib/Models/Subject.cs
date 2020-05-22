@@ -8,5 +8,19 @@ namespace GestionAlumnodsdZero.Lib.Models
     {
         public string Asignatura { get; set; }
         public string Profesor { get; set; }
+
+        public bool Save()
+        {
+          
+            if (this.Id == Guid.Empty)
+            {
+                Context.DbContext.addasigna(this);
+            }
+            else
+            {
+                Context.DbContext.addasigna(this);
+            }
+            return true;
+        }
     }
 }

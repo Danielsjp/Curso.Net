@@ -32,6 +32,7 @@ namespace GestionAlumnodsdZero
         {
             return !string.IsNullOrEmpty(name);
         }
+
         public bool Save()
         {
             var validation = ValidateDni(this.Dni);
@@ -50,6 +51,7 @@ namespace GestionAlumnodsdZero
             }
             return true;
         }
+
         public bool Delete()
         {
             Context.DbContext.AlumoDel(this);
