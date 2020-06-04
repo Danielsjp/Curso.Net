@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using GestionAlumnodsdZero.Context;
-
+using GestionAlumnodsdZero.Infraestructura;
 namespace GestionAlumnodsdZero
 {
     public class Student : Entity
@@ -33,24 +33,30 @@ namespace GestionAlumnodsdZero
             return !string.IsNullOrEmpty(name);
         }
 
-        public bool Save()
+        public SaveResult<Student> Save()
         {
-            var validation = ValidateDni(this.Dni);
-            if (!validation)
-                return false;
-            validation = ValidateName(this.Name);
-            if (!validation)
-                return false;
-            if (this.Id == Guid.Empty)
-            {
-                Context.DbContext.AddStudent(this);
-            }
-            else
-            {
-                Context.DbContext.AddStudent(this);
-            }
-            return true;
+            var saveResult = base.Save<Student>();
+            return saveResult;
         }
+
+        //public bool Save()
+        //{
+        //    var validation = ValidateDni(this.Dni);
+        //    if (!validation)
+        //        return false;
+        //    validation = ValidateName(this.Name);
+        //    if (!validation)
+        //        return false;
+        //    if (this.Id == Guid.Empty)
+        //    {
+        //        Context.DbContext.AddStudent(this);
+        //    }
+        //    else
+        //    {
+        //        Context.DbContext.AddStudent(this);
+        //    }
+        //    return true;
+        //}
 
         public bool Delete()
         {

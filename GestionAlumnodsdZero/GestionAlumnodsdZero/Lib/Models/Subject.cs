@@ -22,5 +22,18 @@ namespace GestionAlumnodsdZero.Lib.Models
             }
             return true;
         }
+        public bool Delete()
+        {
+
+            if (this.Id == Guid.Empty)
+            {
+                Context.DbContext.delasigna(this);
+            }
+            else
+            {
+                Context.DbContext.delasigna(this);
+            }
+            return true;
+        }
     }
 }

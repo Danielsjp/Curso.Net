@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Threading.Tasks.Dataflow;
 using GestionAlumnodsdZero.Lib.Models;
 using GestionAlumnodsdZero.Context;
+using System.Reflection;
 
 namespace GestionAlumnodsdZero
 {
@@ -14,9 +15,6 @@ namespace GestionAlumnodsdZero
     {
         static void Main(string[] args)
         {
-
-
- 
 
             #region menu
             Console.WriteLine(">Bienvenido al gestor de alumnos<");
@@ -60,7 +58,15 @@ namespace GestionAlumnodsdZero
                     Dni = dni,
                     Name = name
                 };
-                student.Save();
+                var sr = student.Save();
+                if (sr.IsSuccess)
+                {
+                    Console.WriteLine($"alumno guardado correctamente");
+                }
+                else
+                {
+                    Console.WriteLine($"uno o más errores han ocurrido y el almuno no se guardado correctamente: {sr.AllErrors}");
+                }
                 menuprincipal();
             }
 
@@ -83,7 +89,6 @@ namespace GestionAlumnodsdZero
 
             };
 
-
             static void menuaddasigna()
             {
                 Console.WriteLine("Introduzca Asignatura Alumno");
@@ -101,6 +106,22 @@ namespace GestionAlumnodsdZero
                 menuprincipal();
             }
 
+            static void odelasigna()
+            {
+                Console.WriteLine("Introduzca Asignatura");
+                var asigna = Console.ReadLine();
+                foreach (var del in Context.DbContext.Asignaturas.Values)
+                {
+                    if (del.Asignatura == asigna)
+                    {
+                        del.Delete();
+                    }
+                }
+                
+                Console.WriteLine("Asignatura grabada");
+                menuprincipal();
+            }
+
             static void menuprincipal()
             {
                 Console.WriteLine("Bienvenido al gestor de alumnos");
@@ -109,6 +130,7 @@ namespace GestionAlumnodsdZero
                 Console.WriteLine("Escriba del para borrar alumnos");
                 Console.WriteLine("Escriba edit para edit alumnos");
                 Console.WriteLine("Escriba asigna para añadir asignaturas");
+                Console.WriteLine("Escriba delasigna para borrar asignaturas");
                 Console.WriteLine("Escriba nota para añadir notas");
                 Console.WriteLine("Escriba shownota");
                 Console.WriteLine("Escriba showasigna para ver asignaturas");
@@ -142,6 +164,10 @@ namespace GestionAlumnodsdZero
                     {
                         menuaddasigna();
                     }
+                    if (opcion == "delasigna")
+                    {
+                        odelasigna();
+                    }
                     if (opcion == "nota")
                     {
                         addnota();
@@ -154,7 +180,7 @@ namespace GestionAlumnodsdZero
             }
             static void ShowAllStudents()
             {
-                foreach (var student in Context.DbContext.Students.Values)
+                foreach (var student in Context.DbContext.StudentByDni.Values)
                 {
                     Console.WriteLine($"{student.Dni} /./ {student.Name}");
                 }
@@ -199,7 +225,8 @@ namespace GestionAlumnodsdZero
                 var dni = Console.ReadLine();
                 Console.WriteLine("Enter the subject or write ESC to exit:");
                 var subjName = Console.ReadLine();
-                var mark = 5;
+                Console.WriteLine("Enter the note or write ESC to exit:");
+                double mark = Int32.Parse(Console.ReadLine());
                 var student = Context.DbContext.Students.Values.FirstOrDefault(x => x.Dni == dni);
                 var subject = Context.DbContext.Asignaturas.Values.FirstOrDefault(x => x.Asignatura == subjName);
                 var exam = new exam
