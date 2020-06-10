@@ -1,0 +1,13 @@
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Rockets\Rockets\bin\Debug\netcoreapp3.1\Rockets.exe
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Rockets\Rockets\bin\Debug\netcoreapp3.1\Rockets.deps.json
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Rockets\Rockets\bin\Debug\netcoreapp3.1\Rockets.runtimeconfig.json
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Rockets\Rockets\bin\Debug\netcoreapp3.1\Rockets.runtimeconfig.dev.json
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Rockets\Rockets\bin\Debug\netcoreapp3.1\Rockets.dll
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Rockets\Rockets\bin\Debug\netcoreapp3.1\Rockets.pdb
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Rockets\Rockets\obj\Debug\netcoreapp3.1\Rockets.csprojAssemblyReference.cache
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Rockets\Rockets\obj\Debug\netcoreapp3.1\Rockets.csproj.CoreCompileInputs.cache
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Rockets\Rockets\obj\Debug\netcoreapp3.1\Rockets.AssemblyInfoInputs.cache
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Rockets\Rockets\obj\Debug\netcoreapp3.1\Rockets.AssemblyInfo.cs
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Rockets\Rockets\obj\Debug\netcoreapp3.1\Rockets.dll
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Rockets\Rockets\obj\Debug\netcoreapp3.1\Rockets.pdb
+C:\Users\sjpda\Documents\GitHub\Curso.Net\Rockets\Rockets\obj\Debug\netcoreapp3.1\Rockets.genruntimeconfig.cache

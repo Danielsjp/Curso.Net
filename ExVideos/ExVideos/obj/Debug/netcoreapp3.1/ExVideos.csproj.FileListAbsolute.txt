@@ -1,0 +1,13 @@
+C:\Users\sjpda\Documents\GitHub\ExVideos\ExVideos\bin\Debug\netcoreapp3.1\ExVideos.exe
+C:\Users\sjpda\Documents\GitHub\ExVideos\ExVideos\bin\Debug\netcoreapp3.1\ExVideos.deps.json
+C:\Users\sjpda\Documents\GitHub\ExVideos\ExVideos\bin\Debug\netcoreapp3.1\ExVideos.runtimeconfig.json
+C:\Users\sjpda\Documents\GitHub\ExVideos\ExVideos\bin\Debug\netcoreapp3.1\ExVideos.runtimeconfig.dev.json
+C:\Users\sjpda\Documents\GitHub\ExVideos\ExVideos\bin\Debug\netcoreapp3.1\ExVideos.dll
+C:\Users\sjpda\Documents\GitHub\ExVideos\ExVideos\bin\Debug\netcoreapp3.1\ExVideos.pdb
+C:\Users\sjpda\Documents\GitHub\ExVideos\ExVideos\obj\Debug\netcoreapp3.1\ExVideos.csprojAssemblyReference.cache
+C:\Users\sjpda\Documents\GitHub\ExVideos\ExVideos\obj\Debug\netcoreapp3.1\ExVideos.csproj.CoreCompileInputs.cache
+C:\Users\sjpda\Documents\GitHub\ExVideos\ExVideos\obj\Debug\netcoreapp3.1\ExVideos.AssemblyInfoInputs.cache
+C:\Users\sjpda\Documents\GitHub\ExVideos\ExVideos\obj\Debug\netcoreapp3.1\ExVideos.AssemblyInfo.cs
+C:\Users\sjpda\Documents\GitHub\ExVideos\ExVideos\obj\Debug\netcoreapp3.1\ExVideos.dll
+C:\Users\sjpda\Documents\GitHub\ExVideos\ExVideos\obj\Debug\netcoreapp3.1\ExVideos.pdb
+C:\Users\sjpda\Documents\GitHub\ExVideos\ExVideos\obj\Debug\netcoreapp3.1\ExVideos.genruntimeconfig.cache
