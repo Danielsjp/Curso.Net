@@ -6,22 +6,18 @@ using System.ComponentModel.Design;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Threading.Tasks.Dataflow;
-
+using System.Linq.Expressions;
 
 namespace ExVideos
 {
     class Program
     {
-
         public static Dictionary<string, User> usuariosvideoclub = new Dictionary<string, User>();
         public static Dictionary<string, Video> videos = new Dictionary<string, Video>();
-        public static Dictionary<string, Video> videosusuario = new Dictionary<string, Video>();
-
+        public static Dictionary<string, Alquiler> videosusuario = new Dictionary<string, Alquiler>();
         static void Main(string[] args)
         {
-
             nuevoUsuario();
-
             static void nuevoUsuario()
             {
                 Console.WriteLine("Escriba Nombre Usuario Nuevo");
@@ -51,23 +47,36 @@ namespace ExVideos
                 }
                 menuprincipal();
             }
-            //static void addvideo()
-            //{
-            //    Console.WriteLine("Escriba url video");
-            //    var url = Console.ReadLine();
-            //    Console.WriteLine("Escriba Nombre video");
-            //    var title = Console.ReadLine();
-            //    Console.WriteLine("Escriba Tags");
-            //    var tags = Console.ReadLine();
-            //    var nuevovideo = new Video
-            //    {
-            //        Url = url,
-            //        Title = title,
-            //        Tags = tags
-            //    };
-
-            //    menuprincipal();
-            //}
+            static void alquiler()
+            {
+                Console.WriteLine("Indique Usuario");
+                string usuario = Console.ReadLine();
+                if (usuariosvideoclub.ContainsKey(usuario))
+                {
+                    Console.WriteLine("El usuario va a crear un nuevo video");
+                    Console.WriteLine("indique nombre video");
+                    var title = Console.ReadLine();
+                    Console.WriteLine("indique url video");
+                    var url = Console.ReadLine();
+                    Console.WriteLine("indique tag video");
+                    var tags = Console.ReadLine();
+                    var nuevovideo = new Video
+                    {
+                        Url = url,
+                        Title = title,
+                        Tags = tags
+                    };
+                    videos.Add(nuevovideo.Title, nuevovideo);
+                    var alquiler = new Alquiler
+                    {
+                        Username = usuario,
+                        Title = title
+                    };
+                    videosusuario.Add(title, alquiler);
+                    menuprincipal();
+                }
+                else Console.WriteLine("no existe el usuario");
+            }
             static void menuprincipal()
             {
                 Console.WriteLine("Bienvenido al Video Club");
@@ -75,7 +84,7 @@ namespace ExVideos
                 Console.WriteLine("Para menu usuario escriba usuario");
                 Console.WriteLine("Para ver usuarios escriba ver");
                 Console.WriteLine("Para ver videos de usuarios escriba videos");
-                //Console.WriteLine("Para añadir video escriba usuario");
+                Console.WriteLine("Para ver todos los videos y reproducir escriba repro");
                 var opcion = Console.ReadLine();
                 var continua = true;
                 while (continua)
@@ -89,7 +98,6 @@ namespace ExVideos
                         {
                             alquiler();
                         }
-
                     }
                     if (opcion == "ver")
                     {
@@ -99,94 +107,40 @@ namespace ExVideos
                     if (opcion == "videos")
                     {
                         vervideos();
-
                     }
-                    //if (opcion == "video")
-                    //{
-                    //    addvideo();
-                    //}
-                }
-
-                static void alquiler()
-                {
-
-                    Console.WriteLine("Indique Usuario");
-                    var usuario = Console.ReadLine();
-                    if (usuariosvideoclub.ContainsKey(usuario))
-                    {
-                        Console.WriteLine("El usuario va a crear un nuevo video");
-                        Console.WriteLine("indique nombre video");
-                        var title = Console.ReadLine();
-                        Console.WriteLine("indique url video");
-                        var url = Console.ReadLine();
-                        Console.WriteLine("indique tag video");
-                        var tags = Console.ReadLine();
-                        var nuevovideo = new Video
-                        {
-                            Url = url,
-                            Title = title,
-                            Tags = tags
-                        };
-                        videos.Add(nuevovideo.Title, nuevovideo);
-
-                        videosusuario.Add(usuario, nuevovideo.Title);
-                        menuprincipal();
-
-                    }
-                    else Console.WriteLine("no existe el usuario");
                 }
             }
-
             static void vervideos()
             {
-                //foreach (var usuarios in usuariosvideoclub.Values)
-                //{
-                //    foreach (var video in videosusuario.Values)
-                //    {
-                //        if (videosusuario.ContainsKey(usuarios.Name))
-                //        {
+                Console.WriteLine("Indique Usuario");
+                var usuario = Console.ReadLine();
+                foreach (var dato in videosusuario.Values)
+                {
+                    if (dato.Username == usuario)
+                    {
 
-                //            Console.WriteLine(usuarios.Name + "//" + video.Title);
-                //        }
-                //    }
-                //}
-
-                //    Console.WriteLine("inserte usuario");
-                //    var usuario = Console.ReadLine();
-                //    foreach (var usuario in videosusuario.Values)
-                //    {
-                //        Console.WriteLine($"El usuario {usuario} tiene las siguientes peliculas:");
-                //        foreach (var datos in videosusuario.Values)
-                //        {
-                //         //Console.WriteLine(videosusuario.);
-                //        }
-                //    }
-                //}
-
-                //static void addvideo()
-                //{
-                //    Console.WriteLine("Escriba url video");
-                //    var url = Console.ReadLine();
-                //    Console.WriteLine("Escriba Nombre video");
-                //    var title = Console.ReadLine();
-                //    Console.WriteLine("Escriba Tags");
-                //    var tags = Console.ReadLine();
-                //    var nuevovideo = new Video
-                //    {
-                //        Url = url,
-                //        Title = title,
-                //        Tags = tags
-                //    };
-                //}
-
+                        Console.WriteLine("Indique Password");
+                        var xpass = Console.ReadLine();
+                        foreach (var pass in usuariosvideoclub.Values)
+                        {
+                            if (pass.xPassword == xpass)
+                            {
+                                Console.WriteLine(dato.Title);
+                            }
+                        }
+                    }
+                }
             }
+           
         }
-
         public class Video
         {
             public string Url;  //propiedad de la clase video o campos de clase 
             public string Title;  //propiedad de la clase video o campos de clase 
             public string Tags;  //propiedad de la clase video o campos de clase 
+            public string Estado; // indica si esta en reproduccion o en que estado esta.
+
+            
         }
         public class User
         {
@@ -195,30 +149,19 @@ namespace ExVideos
             public string Surname;  //propiedad de la clase video o campos de clase
             public string xPassword;  //propiedad de la clase video o campos de clase
             public DateTime Regdate;
-
-            //public bool AddVideo(Video )
-            //{
-            //    exam.Student = this;
-            //    Marks.Add(exam);
-            //    return true;
-            //}
         }
-        //public class Alquiler
-        //{
-        //    public string Username;  //propiedad de la clase video o campos de clase 
-        //    public string Video; //propiedad de la clase video o campos de clase 
-        //    public DateTime Regdate;
-
-        //    //public bool AddVideo(Video )
-        //    //{
-        //    //    exam.Student = this;
-        //    //    Marks.Add(exam);
-        //    //    return true;
-        //    //}
-        //}
+        public class Alquiler : Video
+        {
+            public string Username;
+            public new string Title;
+        }
+        public enum Reproductor { Rewind, Stop, Play, FastForward };
+        public enum Tags { Tag1, Tag2, Tag3, Tag4 };
 
     }
 }
+
+
 
 
 
