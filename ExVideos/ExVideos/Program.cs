@@ -36,6 +36,7 @@ namespace ExVideos
                 //if (string.IsNullOrEmpty(pass)) errorpersonalizado();
                 var nuevouser = new User
                 {
+                    Id = Guid.NewGuid(),
                     Username = user,
                     Name = name,
                     Surname = surname,
