@@ -7,6 +7,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Threading.Tasks.Dataflow;
 using System.Linq.Expressions;
+using ExVideos.Clases;
+using System.IO;
 
 namespace ExVideos
 {
@@ -20,14 +22,18 @@ namespace ExVideos
             nuevoUsuario();
             static void nuevoUsuario()
             {
+                static void errorpersonalizado(Exception ex) { Console.WriteLine("error", ex.Message); }
                 Console.WriteLine("Escriba Nombre Usuario Nuevo");
                 var user = Console.ReadLine();
                 Console.WriteLine("Escriba Nombre Nuevo");
                 var name = Console.ReadLine();
+                //if (string.IsNullOrEmpty(name)) errorpersonalizado();
                 Console.WriteLine("Escriba Apellido Usuario Nuevo");
                 var surname = Console.ReadLine();
+                //if (string.IsNullOrEmpty(surname)) errorpersonalizado();
                 Console.WriteLine("Escriba Password Usuario Nuevo");
                 var pass = Console.ReadLine();
+                //if (string.IsNullOrEmpty(pass)) errorpersonalizado();
                 var nuevouser = new User
                 {
                     Username = user,
@@ -46,7 +52,7 @@ namespace ExVideos
                     Console.WriteLine(usuarios.Username + "" + usuarios.Surname);
                 }
                 menuprincipal();
-            }
+            }        
             static void alquiler()
             {
                 Console.WriteLine("Indique Usuario");
@@ -60,11 +66,15 @@ namespace ExVideos
                     var url = Console.ReadLine();
                     Console.WriteLine("indique tag video");
                     var tags = Console.ReadLine();
+                    Console.WriteLine("indique estado video (0) (1) (2) (3)");
+                    var estado = Int32.Parse(Console.ReadLine());
+                    Reproductor estado2 = (Reproductor)estado;
                     var nuevovideo = new Video
                     {
                         Url = url,
                         Title = title,
-                        Tags = tags
+                        Tags = tags,
+                        Estado = estado2
                     };
                     videos.Add(nuevovideo.Title, nuevovideo);
                     var alquiler = new Alquiler
@@ -107,7 +117,7 @@ namespace ExVideos
                     if (opcion == "videos")
                     {
                         vervideos();
-                    }
+                    }                 
                 }
             }
             static void vervideos()
@@ -118,46 +128,19 @@ namespace ExVideos
                 {
                     if (dato.Username == usuario)
                     {
-
                         Console.WriteLine("Indique Password");
                         var xpass = Console.ReadLine();
                         foreach (var pass in usuariosvideoclub.Values)
                         {
                             if (pass.xPassword == xpass)
                             {
-                                Console.WriteLine(dato.Title);
+                                Console.WriteLine(dato.Title +" /// "+dato.Estado);
                             }
                         }
                     }
                 }
             }
-           
-        }
-        public class Video
-        {
-            public string Url;  //propiedad de la clase video o campos de clase 
-            public string Title;  //propiedad de la clase video o campos de clase 
-            public string Tags;  //propiedad de la clase video o campos de clase 
-            public string Estado; // indica si esta en reproduccion o en que estado esta.
-
-            
-        }
-        public class User
-        {
-            public string Username;  //propiedad de la clase video o campos de clase 
-            public string Name;  //propiedad de la clase video o campos de clase 
-            public string Surname;  //propiedad de la clase video o campos de clase
-            public string xPassword;  //propiedad de la clase video o campos de clase
-            public DateTime Regdate;
-        }
-        public class Alquiler : Video
-        {
-            public string Username;
-            public new string Title;
-        }
-        public enum Reproductor { Rewind, Stop, Play, FastForward };
-        public enum Tags { Tag1, Tag2, Tag3, Tag4 };
-
+        }     
     }
 }
 

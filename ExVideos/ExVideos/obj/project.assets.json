@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sjpda\\Documents\\GitHub\\ExVideos\\ExVideos\\ExVideos.csproj",
+      "projectUniqueName": "C:\\Users\\sjpda\\Documents\\GitHub\\Curso.Net\\ExVideos\\ExVideos\\ExVideos.csproj",
       "projectName": "ExVideos",
-      "projectPath": "C:\\Users\\sjpda\\Documents\\GitHub\\ExVideos\\ExVideos\\ExVideos.csproj",
+      "projectPath": "C:\\Users\\sjpda\\Documents\\GitHub\\Curso.Net\\ExVideos\\ExVideos\\ExVideos.csproj",
       "packagesPath": "C:\\Users\\sjpda\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sjpda\\Documents\\GitHub\\ExVideos\\ExVideos\\obj\\",
+      "outputPath": "C:\\Users\\sjpda\\Documents\\GitHub\\Curso.Net\\ExVideos\\ExVideos\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Microsoft\\Xamarin\\NuGet\\",
