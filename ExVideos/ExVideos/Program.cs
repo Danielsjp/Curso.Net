@@ -9,30 +9,36 @@ using System.Threading.Tasks.Dataflow;
 using System.Linq.Expressions;
 using ExVideos.Clases;
 using System.IO;
+using System.Runtime.CompilerServices;
 
 namespace ExVideos
 {
-    class Program
+    internal class Program
     {
         public static Dictionary<string, User> usuariosvideoclub = new Dictionary<string, User>();
         public static Dictionary<string, Video> videos = new Dictionary<string, Video>();
         public static Dictionary<string, Alquiler> videosusuario = new Dictionary<string, Alquiler>();
-        static void Main(string[] args)
+
+        private static void Main(string[] args)
         {
             nuevoUsuario();
             static void nuevoUsuario()
             {
-                static void errorpersonalizado(Exception ex) { Console.WriteLine("error", ex.Message); }
+                
                 Console.WriteLine("Escriba Nombre Usuario Nuevo");
                 var user = Console.ReadLine();
+                chequeo(user);
                 Console.WriteLine("Escriba Nombre Nuevo");
                 var name = Console.ReadLine();
+                chequeo(name);
                 //if (string.IsNullOrEmpty(name)) errorpersonalizado();
                 Console.WriteLine("Escriba Apellido Usuario Nuevo");
                 var surname = Console.ReadLine();
+                chequeo(surname);
                 //if (string.IsNullOrEmpty(surname)) errorpersonalizado();
                 Console.WriteLine("Escriba Password Usuario Nuevo");
                 var pass = Console.ReadLine();
+                chequeo(pass);
                 //if (string.IsNullOrEmpty(pass)) errorpersonalizado();
                 var nuevouser = new User
                 {
@@ -139,6 +145,18 @@ namespace ExVideos
                             }
                         }
                     }
+                }
+            }
+            static void chequeo(string dato)
+            {
+                if (string.IsNullOrEmpty(dato) == true)
+                {
+                    
+                    Console.WriteLine("No usar Campos Vacios");
+                }
+                else
+                {
+                  
                 }
             }
         }     
