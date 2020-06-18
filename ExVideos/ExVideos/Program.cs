@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using System.Threading.Tasks.Dataflow;
 using System.Linq.Expressions;
 using ExVideos.Clases;
+using ExVideos.dbcontext;
 using System.IO;
 using System.Runtime.CompilerServices;
 
@@ -15,10 +16,6 @@ namespace ExVideos
 {
     internal class Program
     {
-        public static Dictionary<string, User> usuariosvideoclub = new Dictionary<string, User>();
-        public static Dictionary<string, Video> videos = new Dictionary<string, Video>();
-        public static Dictionary<string, Alquiler> videosusuario = new Dictionary<string, Alquiler>();
-
         private static void Main(string[] args)
         {
             nuevoUsuario();
@@ -49,12 +46,12 @@ namespace ExVideos
                     xPassword = pass,
                     Regdate = DateTime.Now
                 };
-                usuariosvideoclub.Add(nuevouser.Username, nuevouser);
+                ExVideos.dbcontext.dbcontext.usuariosvideoclub.Add(nuevouser.Username, nuevouser);
                 menuprincipal();
             }
             static void verusuarios()
             {
-                foreach (var usuarios in usuariosvideoclub.Values)
+                foreach (var usuarios in ExVideos.dbcontext.dbcontext.usuariosvideoclub.Values)
                 {
                     Console.WriteLine(usuarios.Username + "" + usuarios.Surname);
                 }
@@ -64,7 +61,7 @@ namespace ExVideos
             {
                 Console.WriteLine("Indique Usuario");
                 string usuario = Console.ReadLine();
-                if (usuariosvideoclub.ContainsKey(usuario))
+                if (ExVideos.dbcontext.dbcontext.usuariosvideoclub.ContainsKey(usuario))
                 {
                     Console.WriteLine("El usuario va a crear un nuevo video");
                     Console.WriteLine("indique nombre video");
@@ -83,13 +80,14 @@ namespace ExVideos
                         Tags = tags,
                         Estado = estado2
                     };
-                    videos.Add(nuevovideo.Title, nuevovideo);
+                    //videos.Add(nuevovideo.Title, nuevovideo);
+                    Clases.User.videos2.Add(nuevovideo.Title, nuevovideo); // se ha cambiado para que el objeto user sea propietario de la lista de videos.
                     var alquiler = new Alquiler
                     {
                         Username = usuario,
                         Title = title
                     };
-                    videosusuario.Add(title, alquiler);
+                    Clases.User.videosusuario2.Add(title, alquiler);
                     menuprincipal();
                 }
                 else Console.WriteLine("no existe el usuario");
@@ -131,13 +129,13 @@ namespace ExVideos
             {
                 Console.WriteLine("Indique Usuario");
                 var usuario = Console.ReadLine();
-                foreach (var dato in videosusuario.Values)
+                foreach (var dato in Clases.User.videosusuario2.Values)
                 {
                     if (dato.Username == usuario)
                     {
                         Console.WriteLine("Indique Password");
                         var xpass = Console.ReadLine();
-                        foreach (var pass in usuariosvideoclub.Values)
+                        foreach (var pass in ExVideos.dbcontext.dbcontext.usuariosvideoclub.Values)
                         {
                             if (pass.xPassword == xpass)
                             {
