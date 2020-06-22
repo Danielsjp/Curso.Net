@@ -4,9 +4,8 @@ using System.Text;
 
 namespace Rockets.Models
 {
-    public class Rockets
+    public class Entity
     {
-        public string Nombre { get; set; }
-        public int NumCohetes { get; set; }
+        public Guid Id { get; set; }
     }
 }

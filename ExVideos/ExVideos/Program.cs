@@ -20,8 +20,7 @@ namespace ExVideos
         {
             nuevoUsuario();
             static void nuevoUsuario()
-            {
-                
+            {                
                 Console.WriteLine("Escriba Nombre Usuario Nuevo");
                 var user = Console.ReadLine();
                 chequeo(user);
