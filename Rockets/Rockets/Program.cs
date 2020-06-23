@@ -3,6 +3,8 @@ using System;
 using Rockets.Dbcontext;
 using Microsoft.VisualBasic.CompilerServices;
 using System.Threading;
+using System.ComponentModel;
+using System.Runtime.InteropServices.WindowsRuntime;
 
 namespace Rockets
 {
@@ -10,84 +12,67 @@ namespace Rockets
     {
         static void Main(string[] args)
         {
-
-            Thread R2 = new Thread(Acelerar);
-            //Thread R1f = new Thread(Frenar);
-            //Thread R2f = new Thread(Frenar);
-            Thread f = new Thread(Frenar);
-            static void Frenar(object s)
-            {
-
-            }
-            static void Acelerar(object s)
-            {
-                var potenciaobjetivo = Convert.ToInt32(s);
-                foreach (var dato in Rockets.Dbcontext.context.Rocket.Values)
-                {
-                    var potencia = 0;
-                    if (potenciaobjetivo > dato.c1) { potencia = potencia++; Console.WriteLine("C1:" + potencia); }
-                    else
-                    {
-                        Console.WriteLine("C1 ha llegado a la maxima potencia");
-                    }
-                    foreach (var dato2 in Rockets.Dbcontext.context.Rocket.Values)
-                    {
-                        var potencia2 = 0;
-                        if (potenciaobjetivo > dato.c2) { potencia2 = potencia2++; Console.WriteLine("C2:" + potencia2);}
-                        else { Console.WriteLine("C2 ha llegado a la maxima potencia"); }
-                    }
-                    foreach (var dato3 in Rockets.Dbcontext.context.Rocket.Values)
-                    {
-                        var potencia3 = 0;
-                        if (potenciaobjetivo > dato.c3) { potencia3 = potencia3++; Console.WriteLine("C3:" + potencia3); }
-                        else { Console.WriteLine("C3 ha llegado a la maxima potencia"); }
-                    }
-                }
-            }
-            var rocki = new xRockets
+            var Rocki = new xRockets
             {
                 Id = Guid.NewGuid(),
                 NameR = "32WESSDS",
                 numP = 3,
                 c1 = 10,
-                c2 = 30,
+                c2 = 2,
                 c3 = 80
             };
-            Rockets.Dbcontext.context.Rocket.Add(rocki.Id, rocki);
-            
-            R2.Start(50);
-            var rocki2 = new xRockets
+            Rockets.Dbcontext.context.Rocket.Add(Rocki.Id, Rocki);
+            var propulsor = new Propulsor
             {
+                Rocket = Rocki.NameR,
+                Name = "C1",
                 Id = Guid.NewGuid(),
-                NameR = "LDSFJA32",
-                numP = 6,
-                c1 = 30,
-                c2 = 40,
-                c3 = 50,
-                c4 = 50,
-                c5 = 30,
-                c6 = 10
+                actualPot = 0,
+                maxPot = 10,
             };
-            Rockets.Dbcontext.context.Rocket.Add(rocki2.Id, rocki2);
-                //R2.Start();
-                //var rocki2 = new xRockets
-                //{
-                //    Id = Guid.NewGuid(),
-                //    NameR = "LDSFJA32",
-                //    numP = 6
-                //    //Power = 30
-                //};
-                //Rockets.Dbcontext.context.Rocket.Add(rocki2.Id, rocki2);
-                //var propulsor = new Propulsor
-                //{
-                //    Rocket = rocki.NameR,
-                //    Id = System.Guid.NewGuid(),
-                //    actualPot = 0,
-                //    maxPot = 10
-                //};
-                //Rockets.Dbcontext.context.Propul.Add(propulsor.Id, propulsor);
+            Rockets.Dbcontext.context.Propul.Add(propulsor.Id, propulsor);
+            var propulsor2 = new Propulsor
+            {
+                Rocket = Rocki.NameR,
+                Name = "C2",
+                Id = Guid.NewGuid(),
+                actualPot = 0,
+                maxPot = 2,
+            };
+            Rockets.Dbcontext.context.Propul.Add(propulsor2.Id, propulsor2);
+            var propulsor3 = new Propulsor
+            {
+                Rocket = Rocki.NameR,
+                Name = "C3",
+                Id = Guid.NewGuid(),
+                actualPot = 0,
+                maxPot = 80,
+            };
+            Rockets.Dbcontext.context.Propul.Add(propulsor3.Id, propulsor3);
+            Thread R = new Thread(Acelerar);
+            Thread F = new Thread(Frenar);
+            static void Acelerar(object s)
+            {
+                var potenciaobjetivo = Convert.ToInt32(s);                
+                int contador = 0;               
+                foreach (var dato in Rockets.Dbcontext.context.Propul.Values)
+                {                 
+                    for (contador = 0; contador <= potenciaobjetivo; contador++)
+                    {
+                        Console.WriteLine($"Velocidad Actual {dato.Name}:"+contador);
+                        if (contador == dato.maxPot) { Console.WriteLine($"{dato.Name} A SU TOPE"); break; }                      
+                    }
+                }             
             }
+            static void Frenar(object s)
+            {
+                
+            }
+            R.Start(6);
+            F.Start(2);
         }
+    }
 }
+
 
 

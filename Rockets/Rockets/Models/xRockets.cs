@@ -17,12 +17,9 @@ namespace Rockets.Models
         public int c6 { get; set; }
         public int Power { get; set; }
 
-        public void Acelerar(int c)
-        {
-            
-        }
+
 
     }
 }
 
-    
+
