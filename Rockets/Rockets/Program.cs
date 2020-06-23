@@ -5,6 +5,7 @@ using Microsoft.VisualBasic.CompilerServices;
 using System.Threading;
 using System.ComponentModel;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Linq;
 
 namespace Rockets
 {
@@ -18,7 +19,7 @@ namespace Rockets
                 NameR = "32WESSDS",
                 numP = 3,
                 c1 = 10,
-                c2 = 2,
+                c2 = 30,
                 c3 = 80
             };
             Rockets.Dbcontext.context.Rocket.Add(Rocki.Id, Rocki);
@@ -53,23 +54,39 @@ namespace Rockets
             Thread F = new Thread(Frenar);
             static void Acelerar(object s)
             {
-                var potenciaobjetivo = Convert.ToInt32(s);                
-                int contador = 0;               
+                var potenciaobjetivo = Convert.ToInt32(s);                                     
                 foreach (var dato in Rockets.Dbcontext.context.Propul.Values)
                 {                 
-                    for (contador = 0; contador <= potenciaobjetivo; contador++)
+                    for (dato.actualPot = 0; dato.actualPot <= potenciaobjetivo; dato.actualPot++)
                     {
-                        Console.WriteLine($"Velocidad Actual {dato.Name}:"+contador);
-                        if (contador == dato.maxPot) { Console.WriteLine($"{dato.Name} A SU TOPE"); break; }                      
+
+                        
+                        Console.WriteLine($"ACELERANDO {dato.Name} : {dato.actualPot}");
+                        //foreach (var student in myList.Where(r => r.Name == "Tom")) { student.Marks = 35; }
+                       
+                        if (dato.actualPot == dato.maxPot) {Console.WriteLine($"{dato.Name} A SU TOPE DE {dato.maxPot}"); break; }
+                        
+                        if (dato.actualPot == potenciaobjetivo) {Console.WriteLine(dato.Name + " POTENCIA DE :" + potenciaobjetivo + " CONSEGUIDA"); } 
+                        
                     }
-                }             
+
+                }
+                
             }
             static void Frenar(object s)
             {
-                
+                var potenciaobjetivo = Convert.ToInt32(s);
+                foreach (var dato in Rockets.Dbcontext.context.Propul.Values)
+                {
+                    Console.WriteLine("............");
+                    Console.WriteLine($"{dato.Name} tiene actualmete una potencia de {dato.actualPot}");
+
+                }
             }
             R.Start(6);
             F.Start(2);
+            //F.Start(5);
+            //R.Start(20);
         }
     }
 }
