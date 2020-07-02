@@ -5,25 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TiendaFlores"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="153,323,0,0" VerticalAlignment="Top" Width="121" Click="Button_Click"/>
-        
-        <TextBox x:Name="casilla" HorizontalAlignment="Left" Height="24" Margin="152,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="casilla_Copy" HorizontalAlignment="Left" Height="24" Margin="152,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="casilla_Copy1" HorizontalAlignment="Left" Height="24" Margin="152,213,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="casilla_Copy2" HorizontalAlignment="Left" Height="24" Margin="153,259,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="casilla_Copy3" HorizontalAlignment="Left" Height="24" Margin="310,123,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="casilla_Copy4" HorizontalAlignment="Left" Height="24" Margin="310,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="casilla_Copy5" HorizontalAlignment="Left" Height="24" Margin="310,213,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="casilla_Copy6" HorizontalAlignment="Left" Height="24" Margin="310,260,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        
-        <Label Content="Precio" HorizontalAlignment="Left" Margin="310,72,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.237,0.038"/>
-        <Label Content="FLORISTERIA CYBERNARIUM" HorizontalAlignment="Left" VerticalAlignment="Top" Width="794" Background="#FF34DE79"/>
+        Title="MainWindow" Height="575.333" Width="497.333">
+    <Grid HorizontalAlignment="Left" Width="502" Margin="0,-55,-11,33">
+        <Button Content="Button" HorizontalAlignment="Left" Margin="153,323,0,0" VerticalAlignment="Top" Width="277" Click="Button_Click"/>
+
+        <TextBox x:Name="FlorisName" HorizontalAlignment="Left" Height="24" Margin="152,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="TreeSize" HorizontalAlignment="Left" Height="24" Margin="152,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="casilla_Copy_TextChanged"/>
+        <TextBox x:Name="FlowerColor" HorizontalAlignment="Left" Height="24" Margin="152,213,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Decoration" HorizontalAlignment="Left" Height="24" Margin="153,259,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="TreePrice" HorizontalAlignment="Left" Height="24" Margin="310,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="FlowerPrice" HorizontalAlignment="Left" Height="24" Margin="310,213,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="DecoPrice" HorizontalAlignment="Left" Height="24" Margin="310,260,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+        <Label Content="€" HorizontalAlignment="Left" Margin="445,171,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.237,0.038"/>
+        <Label Content="FLORISTERIA CYBERNARIUM" HorizontalAlignment="Left" VerticalAlignment="Top" Width="492" Background="#FF34DE79" Margin="0,55,0,0"/>
         <Label Content="Nueva Decoracion" HorizontalAlignment="Left" Margin="34,260,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.237,0.038"/>
         <Label Content="Color Flor" HorizontalAlignment="Left" Margin="34,213,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.237,0.038"/>
         <Label Content="Tamaño Arbol" HorizontalAlignment="Left" Margin="34,169,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.237,0.038"/>
         <Label Content="Nombre Floristeria" HorizontalAlignment="Left" Margin="31,121,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.237,0.038"/>
+        <Label Content="€" HorizontalAlignment="Left" Margin="445,213,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.237,0.038"/>
+        <Label Content="€" HorizontalAlignment="Left" Margin="445,260,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.237,0.038"/>
+        <Label Content="Stocks" HorizontalAlignment="Left" Margin="50,397,0,0" VerticalAlignment="Top"/>
+        <Button Content="Refresh" HorizontalAlignment="Left" Margin="106,403,0,0" VerticalAlignment="Top" Width="82" Click="Button_Click"/>
+        <Label Content="Stocks" HorizontalAlignment="Left" Margin="52,438,0,0" VerticalAlignment="Top"/>
 
 
     </Grid>

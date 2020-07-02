@@ -50,5 +50,10 @@ namespace TiendaFlores
         {
             
         }
+
+        private void casilla_Copy_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
