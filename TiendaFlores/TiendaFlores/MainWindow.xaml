@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TiendaFlores"
         mc:Ignorable="d"
-        Title="MainWindow" Height="575.333" Width="497.333">
+        Title="MainWindow" Height="518.666" Width="494">
     <Grid HorizontalAlignment="Left" Width="502" Margin="0,-55,-11,33">
-        <Button Content="Button" HorizontalAlignment="Left" Margin="153,323,0,0" VerticalAlignment="Top" Width="277" Click="Button_Click"/>
+        <Button x:Name="BotonPrincipal" Content="Button" HorizontalAlignment="Left" Margin="153,323,0,0" VerticalAlignment="Top" Width="277" Click="Button_Click"/>
 
         <TextBox x:Name="FlorisName" HorizontalAlignment="Left" Height="24" Margin="152,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="TreeSize" HorizontalAlignment="Left" Height="24" Margin="152,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="casilla_Copy_TextChanged"/>
@@ -26,8 +26,8 @@
         <Label Content="€" HorizontalAlignment="Left" Margin="445,213,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.237,0.038"/>
         <Label Content="€" HorizontalAlignment="Left" Margin="445,260,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.237,0.038"/>
         <Label Content="Stocks" HorizontalAlignment="Left" Margin="50,397,0,0" VerticalAlignment="Top"/>
-        <Button Content="Refresh" HorizontalAlignment="Left" Margin="106,403,0,0" VerticalAlignment="Top" Width="82" Click="Button_Click"/>
-        <Label Content="Stocks" HorizontalAlignment="Left" Margin="52,438,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="Refresh" Content="Refresh" HorizontalAlignment="Left" Margin="106,403,0,0" VerticalAlignment="Top" Width="82" Click="Button_Click"/>
+        <Label Content="Stocks" HorizontalAlignment="Left" Margin="229,400,0,0" VerticalAlignment="Top"/>
 
 
     </Grid>

@@ -8,6 +8,9 @@ namespace TiendaFlores.DbContext
 {
     public class context
     {
-        public static Dictionary<Guid, Floristeria> Tiendas = new Dictionary<Guid, Floristeria>();
+        public static Dictionary<Guid, Floristeria> tiendas = new Dictionary<Guid, Floristeria>();
+        public static Dictionary<Guid, Flor> flor = new Dictionary<Guid, Flor>();
+        public static Dictionary<Guid, Decorations> decorations = new Dictionary<Guid, Decorations>();
+        public static Dictionary<Guid, Arbol> arbol = new Dictionary<Guid, Arbol>();
     }
 }

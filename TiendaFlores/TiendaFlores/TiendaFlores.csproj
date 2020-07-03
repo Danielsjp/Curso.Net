@@ -74,6 +74,9 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Class\Arbol.cs" />
+    <Compile Include="Class\Decorations.cs" />
+    <Compile Include="Class\Flor.cs" />
     <Compile Include="Class\Floristeria.cs" />
     <Compile Include="DbContext\context.cs" />
     <Compile Include="MainWindow.xaml.cs">

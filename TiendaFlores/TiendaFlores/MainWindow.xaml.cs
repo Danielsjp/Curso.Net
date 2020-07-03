@@ -23,37 +23,43 @@ namespace TiendaFlores
     /// </summary>
            
     public partial class MainWindow : Window
-    {
-        
+    {       
         public MainWindow()
         {
         InitializeComponent();
-
-
-
         }
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             var flores = new Floristeria
             { 
-
                 Id = Guid.NewGuid(),
-                Name = casilla.Text
+                Name = FlorisName.Text
+            };
+            DbContext.context.tiendas.Add(flores.Id, flores);
+            var arboles = new Arbol
+            {
+                Id = Guid.NewGuid(),
+                Name = FlorisName.Text,
+                Height = Int32.Parse(TreeSize.Text),
+                Price = Int32.Parse(TreePrice.Text)
+            };
+            DbContext.context.arbol.Add(arboles.Id, arboles);
+            var flor = new Flor
+            {
+                Id = Guid.NewGuid(),
+                Name = FlorisName.Text,
+                Color = FlowerColor.Text,
+                Price = Int32.Parse(FlowerPrice.Text)
 
             };
-            DbContext.context.Tiendas.Add(flores.Id, flores);
-            
-        }
+            DbContext.context.flor.Add(flor.Id, flor);
 
+        }
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            
+        {            
         }
-
         private void casilla_Copy_TextChanged(object sender, TextChangedEventArgs e)
         {
-
         }
     }
 }
