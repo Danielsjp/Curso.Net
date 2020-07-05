@@ -53,13 +53,17 @@ namespace TiendaFlores
 
             };
             DbContext.context.flor.Add(flor.Id, flor);
-
+            var decoration = new Decorations
+            {
+                Id = Guid.NewGuid(),
+                Name = FlorisName.Text,
+                Material = Decoration.Text,
+                Price = Int32.Parse(DecoPrice.Text)
+            };
+            DbContext.context.decorations.Add(decoration.Id, decoration);
+            int hello = DbContext.context.tiendas.Count;
+            label1.Content = hello;
         }
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {            
-        }
-        private void casilla_Copy_TextChanged(object sender, TextChangedEventArgs e)
-        {
-        }
+        
     }
 }
