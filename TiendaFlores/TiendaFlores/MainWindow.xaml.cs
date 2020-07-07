@@ -30,40 +30,44 @@ namespace TiendaFlores
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            var flores = new Floristeria
-            { 
+                var flores = new Floristeria
+                { 
                 Id = Guid.NewGuid(),
                 Name = FlorisName.Text
-            };
-            DbContext.context.tiendas.Add(flores.Id, flores);
-            var arboles = new Arbol
-            {
-                Id = Guid.NewGuid(),
-                Name = FlorisName.Text,
-                Height = Int32.Parse(TreeSize.Text),
-                Price = Int32.Parse(TreePrice.Text)
-            };
-            DbContext.context.arbol.Add(arboles.Id, arboles);
-            var flor = new Flor
-            {
-                Id = Guid.NewGuid(),
-                Name = FlorisName.Text,
-                Color = FlowerColor.Text,
-                Price = Int32.Parse(FlowerPrice.Text)
+                };
+                if (flores.Check1(flores.Name))
+                {
+                DbContext.context.tiendas.Add(flores.Id, flores.Name);
+                var arboles = new Arbol
+                {
+                    Id = Guid.NewGuid(),
+                    Name = FlorisName.Text,
+                    Height = Int32.Parse(TreeSize.Text),
+                    Price = Int32.Parse(TreePrice.Text)
+                };
+                DbContext.context.arbol.Add(arboles.Id, arboles);
+                var flor = new Flor
+                {
+                    Id = Guid.NewGuid(),
+                    Name = FlorisName.Text,
+                    Color = FlowerColor.Text,
+                    Price = Int32.Parse(FlowerPrice.Text)
 
-            };
-            DbContext.context.flor.Add(flor.Id, flor);
-            var decoration = new Decorations
-            {
-                Id = Guid.NewGuid(),
-                Name = FlorisName.Text,
-                Material = Decoration.Text,
-                Price = Int32.Parse(DecoPrice.Text)
-            };
-            DbContext.context.decorations.Add(decoration.Id, decoration);
-            int hello = DbContext.context.tiendas.Count;
-            label1.Content = hello;
+                };
+                DbContext.context.flor.Add(flor.Id, flor);
+                var decoration = new Decorations
+                {
+                    Id = Guid.NewGuid(),
+                    Name = FlorisName.Text,
+                    Material = Decoration.Text,
+                    Price = Int32.Parse(DecoPrice.Text)
+                };
+                DbContext.context.decorations.Add(decoration.Id, decoration);
+                int TiendasCount = DbContext.context.tiendas.Count;
+                NumTiendas.Content = TiendasCount;
+            }
+            else { MessageBox.Show("Ya existe una tienda con ese nommbre"); }           
         }
-        
-    }
+    }       
 }
+

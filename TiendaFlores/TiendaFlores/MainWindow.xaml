@@ -25,6 +25,6 @@
         <Label Content="Nombre Floristeria" HorizontalAlignment="Left" Margin="31,121,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.237,0.038"/>
         <Label Content="€" HorizontalAlignment="Left" Margin="445,213,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.237,0.038"/>
         <Label Content="€" HorizontalAlignment="Left" Margin="445,260,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.237,0.038"/>
-        <Label x:Name="label1" HorizontalAlignment="Left" Margin="48,362,0,0" VerticalAlignment="Top" Height="133" Width="422"/>
+        <Label x:Name="NumTiendas" HorizontalAlignment="Left" Margin="153,362,0,0" VerticalAlignment="Top" Height="27" Width="277"/>
     </Grid>
 </Window>
