@@ -64,7 +64,13 @@ namespace TiendaFlores
                 };
                 DbContext.context.decorations.Add(decoration.Id, decoration);
                 int TiendasCount = DbContext.context.tiendas.Count;
+                int suma = 0;
+                foreach (var i in DbContext.context.arbol.Values)
+                {
+                    suma = suma + i.Price;
+                }
                 NumTiendas.Content = TiendasCount;
+                TotalEuros.Content = suma;
             }
             else { MessageBox.Show("Ya existe una tienda con ese nommbre"); }           
         }
